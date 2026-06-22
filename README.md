@@ -3,7 +3,7 @@
 
 
 
-![Figure](img/Overview of CAVeR-MetaRAG.png)
+![Figure](img/Overview_of_CAVeR_MetaRAG.png)
 
 
 
