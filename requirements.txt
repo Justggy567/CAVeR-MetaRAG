@@ -1,0 +1,5 @@
+numpy==2.4.6
+openai==2.38.0
+pandas==3.0.3
+Requests==2.34.2
+tqdm==4.67.1

@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+*.pyc
+
+venv/
+.venv/
+
+logs/
+
+*.gguf
+*.bin
+*.pt
+*.pth

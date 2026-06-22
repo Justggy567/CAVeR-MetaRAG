@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "context": " It was 260 ft tall and when new the second-tallest building in New York, after Trinity Church. It was demolished in 1966.Trinity Church is an historic, active, well-endowed parish church in the Episcopal Diocese of New York.",
+        "question": "A well-endowed parish church in the Episcopal Diocese of New York was the first tallest building in New York over a building that was demolished in what year?",
+        "factoid": "Trinity Church was the first tallest building in New York.",
+        "factoid_type": "Cat 5: Comparative/Superlative",
+        "context_support": false,
+        "answer_type": "hallucinated",
+        "source_answer": "Trinity Church was the first tallest building in New York, and it was demolished in 1966."
+    },
+    {
+        "id": 2,
+        "context": " The species Cardwellia sublimis (northern silky oak) grows naturally only (endemic) in the rainforests of the wet tropics region of north eastern Queensland, Australia.Ochagavia is a genus of the botanical family Bromeliaceae, subfamily Bromelioideae. The genus is named for Sylvestris Ochagavia, Chilean minister of education. Endemic to southern and central Chile (including the Juan Fernández Islands), this genus is represented by four accepted species.",
+        "question": "According to the text, how many accepted species represent the botanical genus Ochagavia?",
+        "factoid": "4",
+        "factoid_type": "Cat 6: Numerical/Computation",
+        "context_support": true
+    }
+]
