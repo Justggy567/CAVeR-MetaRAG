@@ -1,0 +1,31 @@
+{
+  "matrix_run_directory": "artifacts/runs/rq2/asqa_top5_76/matrix/primary",
+  "preparation_calls_path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl",
+  "strong_only_run_directory": "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash/primary",
+  "strong_only_preparation_calls_path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl",
+  "output_path": "artifacts/analysis/rq2_asqa_top5_76.json",
+  "threshold": 0.5,
+  "anomaly_count_threshold": 2,
+  "policies": [
+    "no_escalation",
+    "full_escalation",
+    "strict",
+    "paradox_only",
+    "structure_aware",
+    "uncertainty_only",
+    "anomaly_count",
+    "structure_aware_no_uncertainty",
+    "structure_aware_no_paradox",
+    "structure_aware_no_two_antonym",
+    "structure_aware_no_cross_side"
+  ],
+  "include_routing_controls": true,
+  "budget_unit": "cloud_tokens",
+  "random_seed_count": 1000,
+  "learned_router_folds": 5,
+  "learned_router_seed": 42,
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 42,
+  "include_response_rows": false,
+  "pricing": {}
+}

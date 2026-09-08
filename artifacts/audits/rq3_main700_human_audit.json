@@ -1,0 +1,97 @@
+{
+  "agreement": {
+    "atomicity": {
+      "agreement_count": 700,
+      "agreement_rate": 1.0,
+      "cohen_kappa": null,
+      "labels": [
+        "PASS"
+      ],
+      "n": 700
+    },
+    "context_support": {
+      "agreement_count": 678,
+      "agreement_rate": 0.9685714285714285,
+      "cohen_kappa": 0.9371423440191348,
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "n": 700
+    },
+    "evidence_clarity_descriptive": {
+      "agreement_count": 700,
+      "agreement_rate": 1.0,
+      "cohen_kappa": null,
+      "labels": [
+        "CLEAR"
+      ],
+      "n": 700
+    },
+    "primary_category": {
+      "agreement_count": 672,
+      "agreement_rate": 0.96,
+      "cohen_kappa": 0.9533342222052913,
+      "labels": [
+        "Cat1",
+        "Cat2",
+        "Cat3",
+        "Cat4",
+        "Cat5",
+        "Cat6",
+        "Cat7"
+      ],
+      "n": 700
+    },
+    "question_relevance_descriptive": {
+      "agreement_count": 700,
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": [
+        "FAIL",
+        "PASS"
+      ],
+      "n": 700
+    }
+  },
+  "audit_scope": {
+    "descriptive_non_filter_fields": [
+      "question_relevance",
+      "evidence_clarity"
+    ],
+    "hard_final_fields": [
+      "atomicity",
+      "primary_category",
+      "context_support"
+    ],
+    "question_relevance_filtering": false
+  },
+  "core_category_or_support_disagreements": 47,
+  "core_hard_field_disagreements": 47,
+  "files": {
+    "adjudication": "data/rq3/annotations/main700/adjudication.csv",
+    "annotator_a": "data/rq3/annotations/main700/annotator_A.csv",
+    "annotator_b": "data/rq3/annotations/main700/annotator_B.csv",
+    "frozen_dataset": "data/frozen/rq3_main700_final.jsonl"
+  },
+  "final_consistency": {
+    "atomicity_fail_ids": [],
+    "atomicity_status": "verified_by_double_review",
+    "category_mismatch_ids": [],
+    "context_support_mismatch_ids_among_valid_rows": [],
+    "context_support_status": "verified",
+    "invalid_adjudicated_context_support_ids": [],
+    "trimmed_text_mismatch_ids": []
+  },
+  "question_relevance_descriptive_pair_counts": {
+    "A=FAIL,B=FAIL": 97,
+    "A=PASS,B=PASS": 603
+  },
+  "rows": {
+    "adjudication_nonempty": 53,
+    "annotator_a": 700,
+    "annotator_b": 700,
+    "frozen": 700
+  },
+  "unadjudicated_core_disagreements": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "caver-experiment-environment-v1",
+  "captured_at_utc": "2026-08-31T01:30:43.137409+00:00",
+  "scope": "Environment recorded for the completed experimental ledgers",
+  "software": {
+    "operating_system": "Windows 10 (10.0.19045)",
+    "python": "3.13.9",
+    "ollama": "0.33.1",
+    "python_requirements": "requirements.txt"
+  },
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i5-14600KF",
+    "physical_cores": 14,
+    "logical_processors": 20,
+    "physical_memory_bytes": 34128007168,
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_memory_mib": 16376,
+    "gpu_driver": "591.44"
+  },
+  "local_models": {
+    "gemma3:4b": {
+      "parameters": "4.3B",
+      "quantization": "Q4_K_M"
+    },
+    "gemma3:12b": {
+      "parameters": "12.2B",
+      "quantization": "Q4_K_M"
+    },
+    "phi4:latest": {
+      "parameters": "14.7B",
+      "quantization": "Q4_K_M"
+    }
+  },
+  "hosted_model": {
+    "configured_model": "deepseek-v4-flash",
+    "returned_model_id": "deepseek-v4-flash",
+    "endpoint_type": "OpenAI-compatible",
+    "thinking_mode": "disabled"
+  },
+  "energy_measurement": {
+    "status": "unavailable",
+    "reason": "No external power telemetry was collected; GPU duration is not energy."
+  },
+  "provenance_note": "This compact release audit preserves the experiment-relevant values from the 2026-08-31 capture and omits machine-specific executable paths and unrelated global-package build paths."
+}

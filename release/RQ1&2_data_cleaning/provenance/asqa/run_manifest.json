@@ -1,0 +1,41 @@
+{
+  "dataset_version": "ASQA-reconstructed-v2",
+  "scientific_status": "new_reconstruction_from_reproducible_NO1_baseline",
+  "pipeline_version": "1.0.0",
+  "created_utc": "2026-08-19T04:04:23.789726+00:00",
+  "input_path": "provenance/asqa/input_after_no1.json",
+  "input_sha256": "4df0328fc51b337df276b623de2bbfed0c731f2ebb86f9f8c3cc43fa641896db",
+  "model_requested": "deepseek-v4-flash",
+  "thinking_mode": "disabled",
+  "test_limit": null,
+  "prompt_hashes": {
+    "no2": "81df1dec2e503fe64b80741ba012938b68809e6d500a032981091fb800775760",
+    "inject": "ff0654efba4b06c34f510ba704c9977051ea9f23e82a44b26e74c0466292db0a",
+    "no3_right": "e2c467410219ad5f817842c39ced1f2a4497ad7319ae2dcb8dd369991ddd3401",
+    "no3_hallucination": "7f22f7f08dcc9aaaec0473d5e3cbcbe6e59f25bd5169712b07cdc95088b68e64"
+  },
+  "stages": [
+    "normalize",
+    "no2",
+    "inject",
+    "no3"
+  ],
+  "status": "complete",
+  "normalized_count": 848,
+  "updated_utc": "2026-08-19T04:18:54.064410+00:00",
+  "no2_counts": {
+    "clean": 116,
+    "rejected": 732,
+    "unresolved": 0
+  },
+  "injection_counts": {
+    "injected": 116,
+    "rejected": 0,
+    "unresolved": 0
+  },
+  "no3_counts": {
+    "clean": 76,
+    "rejected": 40,
+    "unresolved": 0
+  }
+}

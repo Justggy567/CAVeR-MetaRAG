@@ -1,0 +1,365 @@
+{
+  "analysis_type": "hosted_api_repeatability",
+  "datasets": {
+    "ASQA-top5-76": {
+      "metric_across_replicates": {
+        "accuracy": {
+          "max": 0.9539473684210527,
+          "mean": 0.9495614035087719,
+          "min": 0.9473684210526315,
+          "sample_sd": 0.0037983570341423188
+        },
+        "f1": {
+          "max": 0.9554140127388535,
+          "mean": 0.9513827299846812,
+          "min": 0.949367088607595,
+          "sample_sd": 0.0034911932749513465
+        },
+        "precision": {
+          "max": 0.9259259259259259,
+          "mean": 0.9183980728696176,
+          "min": 0.9146341463414634,
+          "sample_sd": 0.006519311982719334
+        },
+        "recall": {
+          "max": 0.9868421052631579,
+          "mean": 0.9868421052631579,
+          "min": 0.9868421052631579,
+          "sample_sd": 0.0
+        }
+      },
+      "pairwise_prediction_agreement": {
+        "replicate_01_vs_replicate_02": {
+          "agreement_count": 152,
+          "agreement_rate": 1.0,
+          "cohen_kappa": 1.0,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 152
+        },
+        "replicate_01_vs_replicate_03": {
+          "agreement_count": 151,
+          "agreement_rate": 0.993421052631579,
+          "cohen_kappa": 0.9867734075878873,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 152
+        },
+        "replicate_02_vs_replicate_03": {
+          "agreement_count": 151,
+          "agreement_rate": 0.993421052631579,
+          "cohen_kappa": 0.9867734075878873,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 152
+        }
+      },
+      "replicates": {
+        "replicate_01": {
+          "application_cache_hits": 905,
+          "cloud_ledger_rows": 4005,
+          "confusion": {
+            "accuracy": 0.9473684210526315,
+            "f1": 0.949367088607595,
+            "fn": 1,
+            "fp": 7,
+            "n": 152,
+            "precision": 0.9146341463414634,
+            "recall": 0.9868421052631579,
+            "tn": 69,
+            "tp": 75
+          },
+          "manifest": {
+            "config_hash": "f39b0d1f1838eed6579eca67a11148dc8973c578aa411895b6ac23dabf14fcc4",
+            "prepared_sha256": "c89fbbfb0df9a376a89f61db747cc2b13a826e8c3ef9e918cd22b5ff0d36ef69",
+            "prompt_bundle": {
+              "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+              "hashes": {
+                "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+                "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+                "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+                "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+                "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+                "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+                "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+              },
+              "version": "2026-08-22.v1"
+            }
+          },
+          "provider_fingerprints": [
+            "a26a7955944dc5c60445bff77fac9c8e"
+          ],
+          "returned_model_ids": [
+            "deepseek-v4-flash"
+          ]
+        },
+        "replicate_02": {
+          "application_cache_hits": 905,
+          "cloud_ledger_rows": 4005,
+          "confusion": {
+            "accuracy": 0.9473684210526315,
+            "f1": 0.949367088607595,
+            "fn": 1,
+            "fp": 7,
+            "n": 152,
+            "precision": 0.9146341463414634,
+            "recall": 0.9868421052631579,
+            "tn": 69,
+            "tp": 75
+          },
+          "manifest": {
+            "config_hash": "a091858e956a7b103b54d74941a66b35d3f0b54afb2898fb8ee644ed907a7df6",
+            "prepared_sha256": "c89fbbfb0df9a376a89f61db747cc2b13a826e8c3ef9e918cd22b5ff0d36ef69",
+            "prompt_bundle": {
+              "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+              "hashes": {
+                "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+                "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+                "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+                "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+                "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+                "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+                "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+              },
+              "version": "2026-08-22.v1"
+            }
+          },
+          "provider_fingerprints": [
+            "a26a7955944dc5c60445bff77fac9c8e"
+          ],
+          "returned_model_ids": [
+            "deepseek-v4-flash"
+          ]
+        },
+        "replicate_03": {
+          "application_cache_hits": 905,
+          "cloud_ledger_rows": 4005,
+          "confusion": {
+            "accuracy": 0.9539473684210527,
+            "f1": 0.9554140127388535,
+            "fn": 1,
+            "fp": 6,
+            "n": 152,
+            "precision": 0.9259259259259259,
+            "recall": 0.9868421052631579,
+            "tn": 70,
+            "tp": 75
+          },
+          "manifest": {
+            "config_hash": "0eca4fb255ca5c33ca521258b6edce8362680e5ede9dc726037799c1b7f02d0c",
+            "prepared_sha256": "c89fbbfb0df9a376a89f61db747cc2b13a826e8c3ef9e918cd22b5ff0d36ef69",
+            "prompt_bundle": {
+              "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+              "hashes": {
+                "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+                "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+                "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+                "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+                "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+                "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+                "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+              },
+              "version": "2026-08-22.v1"
+            }
+          },
+          "provider_fingerprints": [
+            "a26a7955944dc5c60445bff77fac9c8e"
+          ],
+          "returned_model_ids": [
+            "deepseek-v4-flash"
+          ]
+        }
+      },
+      "selected_responses": 152,
+      "stable_prediction_rate": 0.993421052631579,
+      "stable_predictions_all_replicates": 151
+    },
+    "HaluEvalQA-3206-afterHuman": {
+      "metric_across_replicates": {
+        "accuracy": {
+          "max": 0.845,
+          "mean": 0.8441666666666666,
+          "min": 0.8425,
+          "sample_sd": 0.0014433756729740337
+        },
+        "f1": {
+          "max": 0.8368421052631579,
+          "mean": 0.8358190991991853,
+          "min": 0.8337730870712402,
+          "sample_sd": 0.001771898479251565
+        },
+        "precision": {
+          "max": 0.8833333333333333,
+          "mean": 0.8831160769708255,
+          "min": 0.88268156424581,
+          "sample_sd": 0.0003762990581310486
+        },
+        "recall": {
+          "max": 0.795,
+          "mean": 0.7933333333333333,
+          "min": 0.79,
+          "sample_sd": 0.0028867513459481316
+        }
+      },
+      "pairwise_prediction_agreement": {
+        "replicate_01_vs_replicate_02": {
+          "agreement_count": 400,
+          "agreement_rate": 1.0,
+          "cohen_kappa": 1.0,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 400
+        },
+        "replicate_01_vs_replicate_03": {
+          "agreement_count": 399,
+          "agreement_rate": 0.9975,
+          "cohen_kappa": 0.9949469429004549,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 400
+        },
+        "replicate_02_vs_replicate_03": {
+          "agreement_count": 399,
+          "agreement_rate": 0.9975,
+          "cohen_kappa": 0.9949469429004549,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 400
+        }
+      },
+      "replicates": {
+        "replicate_01": {
+          "application_cache_hits": 194,
+          "cloud_ledger_rows": 3335,
+          "confusion": {
+            "accuracy": 0.845,
+            "f1": 0.8368421052631579,
+            "fn": 41,
+            "fp": 21,
+            "n": 400,
+            "precision": 0.8833333333333333,
+            "recall": 0.795,
+            "tn": 179,
+            "tp": 159
+          },
+          "manifest": {
+            "config_hash": "d9583d927c4443c922a179c93a945a13e46dbe98866097ee289645746d3a240b",
+            "prepared_sha256": "e73beddbef8a50ab7be2b6555f0ffb6791dfd96bb0c8d5d2747fcb393cf1ff7f",
+            "prompt_bundle": {
+              "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+              "hashes": {
+                "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+                "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+                "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+                "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+                "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+                "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+                "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+              },
+              "version": "2026-08-22.v1"
+            }
+          },
+          "provider_fingerprints": [
+            "a26a7955944dc5c60445bff77fac9c8e"
+          ],
+          "returned_model_ids": [
+            "deepseek-v4-flash"
+          ]
+        },
+        "replicate_02": {
+          "application_cache_hits": 194,
+          "cloud_ledger_rows": 3335,
+          "confusion": {
+            "accuracy": 0.845,
+            "f1": 0.8368421052631579,
+            "fn": 41,
+            "fp": 21,
+            "n": 400,
+            "precision": 0.8833333333333333,
+            "recall": 0.795,
+            "tn": 179,
+            "tp": 159
+          },
+          "manifest": {
+            "config_hash": "c92e1f65435941a43069e8346f74360f5fdda55b1e38aff03b2a7a0f1d72a684",
+            "prepared_sha256": "e73beddbef8a50ab7be2b6555f0ffb6791dfd96bb0c8d5d2747fcb393cf1ff7f",
+            "prompt_bundle": {
+              "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+              "hashes": {
+                "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+                "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+                "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+                "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+                "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+                "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+                "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+              },
+              "version": "2026-08-22.v1"
+            }
+          },
+          "provider_fingerprints": [
+            "a26a7955944dc5c60445bff77fac9c8e"
+          ],
+          "returned_model_ids": [
+            "deepseek-v4-flash"
+          ]
+        },
+        "replicate_03": {
+          "application_cache_hits": 194,
+          "cloud_ledger_rows": 3335,
+          "confusion": {
+            "accuracy": 0.8425,
+            "f1": 0.8337730870712402,
+            "fn": 42,
+            "fp": 21,
+            "n": 400,
+            "precision": 0.88268156424581,
+            "recall": 0.79,
+            "tn": 179,
+            "tp": 158
+          },
+          "manifest": {
+            "config_hash": "960af71acb0690d13f3d2cf13bdc4230850aaa9364f1a4cdc2f49c23f98838eb",
+            "prepared_sha256": "e73beddbef8a50ab7be2b6555f0ffb6791dfd96bb0c8d5d2747fcb393cf1ff7f",
+            "prompt_bundle": {
+              "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+              "hashes": {
+                "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+                "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+                "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+                "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+                "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+                "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+                "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+              },
+              "version": "2026-08-22.v1"
+            }
+          },
+          "provider_fingerprints": [
+            "a26a7955944dc5c60445bff77fac9c8e"
+          ],
+          "returned_model_ids": [
+            "deepseek-v4-flash"
+          ]
+        }
+      },
+      "selected_responses": 400,
+      "stable_prediction_rate": 0.9975,
+      "stable_predictions_all_replicates": 399
+    }
+  },
+  "fresh_cache_definition": "Each replicate uses its own initially absent application cache. Within-replicate cache hits may occur only for duplicate exact requests and are reported.",
+  "package_manifest": "artifacts/reviewer/hosted_repeats_20260829/package_manifest.json"
+}

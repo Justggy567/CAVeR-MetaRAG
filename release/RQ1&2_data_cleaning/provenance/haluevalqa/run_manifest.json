@@ -1,0 +1,36 @@
+{
+  "pipeline_version": "4.2.0",
+  "dataset": "haluevalqa",
+  "created_utc": "2026-08-19T10:44:47.570229+00:00",
+  "input_path": "provenance/haluevalqa/input_raw_10000.json",
+  "input_sha256": "7df3d7c9e5402df396614afe5f7a47657213ac59ac2c2c6631535050c7cc16ee",
+  "model": "deepseek-v4-flash",
+  "thinking_mode": "disabled",
+  "test_limit": null,
+  "run_tag": "full_10000_original_cleaning",
+  "prompt_hashes": {
+    "no2": "81df1dec2e503fe64b80741ba012938b68809e6d500a032981091fb800775760",
+    "injection": "ff0654efba4b06c34f510ba704c9977051ea9f23e82a44b26e74c0466292db0a",
+    "no3_right": "e2c467410219ad5f817842c39ced1f2a4497ad7319ae2dcb8dd369991ddd3401",
+    "no3_hallucination": "7f22f7f08dcc9aaaec0473d5e3cbcbe6e59f25bd5169712b07cdc95088b68e64"
+  },
+  "no1_rule_hash": "24a2940c5a670c83233d9b9416a5a6237bbf120f461cf1418554c1557a5e5332",
+  "no3_checks_right_answer": true,
+  "status": "complete",
+  "raw_count": 10000,
+  "no1_counts": {
+    "clean": 9367,
+    "rejected": 633
+  },
+  "updated_utc": "2026-08-19T16:19:13.996850+00:00",
+  "no2_counts": {
+    "clean": 6777,
+    "rejected": 2590,
+    "unresolved": 0
+  },
+  "no3_counts": {
+    "clean": 3557,
+    "rejected": 3220,
+    "unresolved": 0
+  }
+}

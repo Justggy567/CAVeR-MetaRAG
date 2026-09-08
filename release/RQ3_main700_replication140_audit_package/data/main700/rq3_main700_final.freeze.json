@@ -1,0 +1,58 @@
+{
+  "dataset_name": "RQ3-main700-final",
+  "status": "frozen",
+  "canonical_path": "data/main700/rq3_main700_final.jsonl",
+  "frozen_at_utc": "2026-08-29T09:07:10.433Z",
+  "serialization": "UTF-8 without BOM; LF; exactly one JSON object per physical line",
+  "sha256": "c3f868a3af409dbf61838f4edce8820c01a8a62f7c7fe70c3457a94dd5db331a",
+  "bytes": 1030447,
+  "records": 700,
+  "unique_ids": 700,
+  "first_id": "MAIN_0001",
+  "last_id": "MAIN_0700",
+  "required_nonempty_fields": [
+    "question",
+    "context",
+    "factoid"
+  ],
+  "category_support_counts": {
+    "Cat1": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    },
+    "Cat2": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    },
+    "Cat3": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    },
+    "Cat4": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    },
+    "Cat5": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    },
+    "Cat6": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    },
+    "Cat7": {
+      "n": 100,
+      "supported": 50,
+      "unsupported": 50
+    }
+  },
+  "source_before_serialization_normalization_sha256": "d09617eea36c068ed3827b6052c1619745f05f6d52ed172a30812ae031a65feb",
+  "semantic_change_during_serialization_normalization": false,
+  "release_scope": "final-only; development-stage snapshots are intentionally omitted"
+}

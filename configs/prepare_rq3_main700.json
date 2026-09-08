@@ -1,0 +1,27 @@
+{
+  "dataset": {
+    "name": "RQ3-main700-final",
+    "path": "data/frozen/rq3_main700_final.jsonl",
+    "format": "factoids"
+  },
+  "prepared_path": "artifacts/prepared/rq3_main700.probes.jsonl",
+  "resume": true,
+  "decomposition_format_max_attempts": 3,
+  "decomposition_failure_policy": "record_and_continue",
+  "mutation_temperature": 0.2,
+  "mutation_format_max_attempts": 3,
+  "mutation_failure_policy": "record_and_continue",
+  "preparation_model": {
+    "backend": "openai_compatible",
+    "model_id": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096,
+    "seed": null,
+    "thinking_mode": "disabled",
+    "timeout_seconds": 120,
+    "max_retries": 4
+  }
+}

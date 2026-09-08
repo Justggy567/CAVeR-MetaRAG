@@ -1,0 +1,95 @@
+{
+  "final": {
+    "accuracy": 0.9473684210526315,
+    "f1": 0.949367088607595,
+    "fn": 1,
+    "fp": 7,
+    "n": 152,
+    "precision": 0.9146341463414634,
+    "recall": 0.9868421052631579,
+    "tn": 69,
+    "tp": 75
+  },
+  "preparation_coverage": {
+    "analyzed_factoids": 801,
+    "analyzed_responses": 152,
+    "excluded_zero_probe_responses": [],
+    "source_factoids": 802,
+    "source_responses": 152,
+    "unresolved_decomposition_rate": 0.0,
+    "unresolved_decompositions": 0,
+    "unresolved_mutation_rate": 0.0012468827930174563,
+    "unresolved_mutations": 1
+  },
+  "resources": {
+    "stage1_verify:openai_compatible": {
+      "cache_hits": 905,
+      "executed_calls": 3100,
+      "input_tokens": 3864749,
+      "latency_seconds": 3767.833423902979,
+      "ollama_generation_duration_seconds": 0.0,
+      "ollama_load_duration_seconds": 0.0,
+      "ollama_prompt_eval_duration_seconds": 0.0,
+      "ollama_total_duration_seconds": 0.0,
+      "output_tokens": 109302,
+      "policy_calls": 4005,
+      "total_tokens": 3974051
+    }
+  },
+  "routing": {
+    "factoid_escalation_rate": 0.0,
+    "response_escalation_rate": 0.0,
+    "routed_factoids": 0,
+    "routed_responses": 0,
+    "total_factoids": 801,
+    "total_responses": 152
+  },
+  "routing_latency": {
+    "factoids": 801,
+    "mean_seconds_per_factoid": 1.457228282287475e-05,
+    "total_seconds": 0.011672398541122675
+  },
+  "stage1": {
+    "accuracy": 0.9473684210526315,
+    "f1": 0.949367088607595,
+    "fn": 1,
+    "fp": 7,
+    "n": 152,
+    "precision": 0.9146341463414634,
+    "recall": 0.9868421052631579,
+    "tn": 69,
+    "tp": 75
+  },
+  "transitions": {
+    "error_conditional_rescue": null,
+    "error_conditional_rescue_rate": null,
+    "harm_rate_all_responses": 0.0,
+    "harm_rate_among_routed": null,
+    "harm_rate_response": null,
+    "harmed": 0,
+    "n": 152,
+    "net_correct_gain": 0,
+    "overall_harm_rate": 0.0,
+    "overall_rescue_rate": 0.0,
+    "rate_denominators": {
+      "error_conditional_rescue_rate": 0,
+      "harm_rate_all_responses": 152,
+      "harm_rate_response": 0,
+      "rescue_rate_all_responses": 152,
+      "rescue_rate_response": 0
+    },
+    "rescue_rate_all_responses": 0.0,
+    "rescue_rate_among_routed": null,
+    "rescue_rate_response": null,
+    "rescued": 0,
+    "routed_responses": 0,
+    "routed_stage1_wrong": 0,
+    "unchanged_correct": 144,
+    "unchanged_wrong": 8,
+    "undefined_rates": [
+      "rescue_rate_response",
+      "harm_rate_response",
+      "error_conditional_rescue_rate"
+    ]
+  }
+}

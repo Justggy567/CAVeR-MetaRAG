@@ -1,0 +1,31 @@
+{
+  "dataset_name": "ASQA-top5-76",
+  "frozen_version": "2026-08-28.v2",
+  "file": "asqa_top5_76_cleaned_final.json",
+  "sha256": "b4189a7be2798cee0f6f1cf43a07597682ac7eb199ae29f9d6f105a670b69f78",
+  "records": 76,
+  "evaluated_responses_if_both_roles": 152,
+  "unique_ids": 76,
+  "unique_questions": 76,
+  "required_fields_complete": true,
+  "right_answer_equals_hallucinated_answer": 0,
+  "previous_sha256": "eeccd8201fd7943a3639ebdadd2ff8d464f59fac4a863bea80b59212b58870d6",
+  "changed_record_ids": [
+    "451",
+    "513",
+    "718"
+  ],
+  "changed_fields": {
+    "451": [
+      "right_answer"
+    ],
+    "513": [
+      "right_answer",
+      "hallucinated_answer"
+    ],
+    "718": [
+      "right_answer"
+    ]
+  },
+  "notes": "The hash identifies the exact byte-level frozen input. Existing ASQA prepared probes, verifier runs, analyses, and publication tables created from the previous hash must not be reused as final evidence."
+}

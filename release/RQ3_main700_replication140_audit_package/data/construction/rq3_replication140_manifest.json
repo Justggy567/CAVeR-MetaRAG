@@ -1,0 +1,60 @@
+{
+  "schema_version": "rq3-replication140-construction-manifest-v2",
+  "dataset_version": "RQ3-FactoidReplication140-v1.2.0",
+  "release_scope": "final-only",
+  "selection_rule": {
+    "salt": "rq3-replication140-v1",
+    "strata": "category x context_support x source_dataset",
+    "rows_per_stratum": 5,
+    "global_normalized_context_unique": true
+  },
+  "inputs": {
+    "main700": {
+      "path": "data/main700/rq3_main700_final.jsonl",
+      "sha256": "c3f868a3af409dbf61838f4edce8820c01a8a62f7c7fe70c3457a94dd5db331a",
+      "rows": 700
+    },
+    "large_candidate_pool": {
+      "path": "data/construction/rq3_candidate_pool_final.jsonl",
+      "sha256": "415d3186b722843c52aa114f74a5ed239a17e6b63bd9f48b470db474408070e6",
+      "rows": 830
+    },
+    "annotator_A": {
+      "path": "audit/replication140/annotator_A_reaudited.csv",
+      "sha256": "4ea3d63d7620c77164bfdaedcb22fcca71e7a58db2462f23a86803af6b4ca799",
+      "rows": 140
+    },
+    "annotator_B": {
+      "path": "audit/replication140/annotator_B_reaudited.csv",
+      "sha256": "79408325a623632785ff0d6d4fe45cb0f70ef13709af966b3a6a89e12d8f192a",
+      "rows": 140
+    },
+    "adjudicator_C": {
+      "path": "audit/replication140/adjudicator_C.csv",
+      "sha256": "aed7654d80c9c4d7358a0a4086ef0fb3a83a5daf5187a5a190d7c88cc33756d8",
+      "rows": 10
+    }
+  },
+  "outputs": {
+    "filtered_candidate_pool": {
+      "path": "data/construction/rq3_replication_candidate_pool_351.jsonl",
+      "sha256": "a7fa389aeec079e637b6ab555f6ec4d1281f5e227162a302d4574245d8a410f7",
+      "rows": 351
+    },
+    "frozen_dataset": {
+      "path": "data/replication140/rq3_replication140_final.jsonl",
+      "sha256": "337595d8d4f4dd8ea6240c4b3aded1d851afe36f84bfdc9c9f5c517aba4f302e",
+      "rows": 140
+    },
+    "selection_crosswalk": {
+      "path": "data/construction/rq3_replication140_selection.jsonl",
+      "sha256": "80a315b1d378afc0b25f5892e34f133d0bf3215a5e7485e964ee58813426d890",
+      "rows": 140
+    },
+    "reserve_queue": {
+      "path": "data/construction/rq3_replication140_reserve_queue.jsonl",
+      "sha256": "cc925b282f6653568b917c01780fb0d231fb44e42a5a0446467821e4ee4b60b3",
+      "rows": 211
+    }
+  }
+}

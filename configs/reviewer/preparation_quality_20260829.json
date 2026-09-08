@@ -1,0 +1,42 @@
+{
+  "output_path": "artifacts/audits/preparation_quality_20260829.json",
+  "csv_path": "artifacts/audits/preparation_quality_20260829.csv",
+  "datasets": [
+    {
+      "name": "ASQA-top5-76",
+      "prepared_manifest": "artifacts/prepared/asqa_top5_76.probes.jsonl.manifest.json",
+      "run_manifests": [
+        "artifacts/runs/rq1/asqa_top5_76/gemma3_4b/primary/manifest.json",
+        "artifacts/runs/rq1/asqa_top5_76/gemma3_12b/primary/manifest.json",
+        "artifacts/runs/rq1/asqa_top5_76/phi4_14b/primary/manifest.json",
+        "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash/primary/manifest.json",
+        "artifacts/runs/rq2/asqa_top5_76/matrix/primary/manifest.json"
+      ]
+    },
+    {
+      "name": "HaluEvalQA-3206-afterHuman",
+      "prepared_manifest": "artifacts/prepared/haluevalqa_3206.probes.jsonl.manifest.json",
+      "run_manifests": [
+        "artifacts/runs/rq1/haluevalqa_3206/gemma3_4b/primary/manifest.json",
+        "artifacts/runs/rq1/haluevalqa_3206/gemma3_12b/primary/manifest.json",
+        "artifacts/runs/rq1/haluevalqa_3206/phi4_14b/primary/manifest.json",
+        "artifacts/runs/rq1/haluevalqa_3206/deepseek_v4_flash/primary/manifest.json",
+        "artifacts/runs/rq2/haluevalqa_3206/matrix/primary/manifest.json"
+      ]
+    },
+    {
+      "name": "RQ3-main700-final",
+      "prepared_manifest": "artifacts/prepared/rq3_main700.probes.jsonl.manifest.json",
+      "run_manifests": [
+        "artifacts/runs/rq3/main700/structure_aware/primary/manifest.json"
+      ]
+    },
+    {
+      "name": "RQ3-replication140-final",
+      "prepared_manifest": "artifacts/prepared/rq3_replication140.probes.jsonl.manifest.json",
+      "run_manifests": [
+        "artifacts/runs/rq3/replication140/structure_aware/primary/manifest.json"
+      ]
+    }
+  ]
+}

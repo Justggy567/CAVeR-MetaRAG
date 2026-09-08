@@ -1,0 +1,33 @@
+{
+  "analysis_schema_version": "2026-08-22.metrics-v2",
+  "notes": [
+    "All values are exported from completed analysis JSON reports.",
+    "RQ2 contains every policy in each source analysis report, including primary strategies, controls, and trigger ablations.",
+    "Blank charge fields mean prices were not supplied; they are not zero-cost claims.",
+    "RQ1 contains four verifier models across two datasets, i.e. eight run configurations."
+  ],
+  "source_reports": [
+    {
+      "path": "artifacts/analysis/rq1_all_models.json",
+      "sha256": "dfc62161bd74fca07416a1444b58023e5aa4702a69248882121daa70cec69d9e"
+    },
+    {
+      "path": "artifacts/analysis/rq3_main700.json",
+      "sha256": "2dc18f350039658bcdceefde0871b2cb3c6e4f56bbd054d66f2407dd660006b7"
+    },
+    {
+      "path": "artifacts/analysis/rq2_asqa_top5_76.json",
+      "sha256": "919cc4569e25bcf4106487e0553f09c6e4bf557a21b6a87cc9726b634e7b218d"
+    },
+    {
+      "path": "artifacts/analysis/rq2_haluevalqa_3206.json",
+      "sha256": "568e80dea34c762af4c4690022e23f12c885e3a921f9821991c038b4fea316a2"
+    }
+  ],
+  "status": "complete",
+  "tables": {
+    "rq1_effectiveness_resources.csv": 8,
+    "rq2_policy_comparison.csv": 28,
+    "rq3_category_analysis.csv": 8
+  }
+}

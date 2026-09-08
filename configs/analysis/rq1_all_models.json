@@ -1,0 +1,18 @@
+{
+  "output_path": "artifacts/analysis/rq1_all_models.json",
+  "reference_model": "DeepSeek-V4-Flash",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 42,
+  "include_response_rows": false,
+  "pricing": {},
+  "runs": [
+    {"dataset": "ASQA-top5-76", "model_label": "Gemma3-4B", "run_directory": "artifacts/runs/rq1/asqa_top5_76/gemma3_4b/primary", "preparation_calls_path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl"},
+    {"dataset": "ASQA-top5-76", "model_label": "Gemma3-12B", "run_directory": "artifacts/runs/rq1/asqa_top5_76/gemma3_12b/primary", "preparation_calls_path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl"},
+    {"dataset": "ASQA-top5-76", "model_label": "Phi4-14B", "run_directory": "artifacts/runs/rq1/asqa_top5_76/phi4_14b/primary", "preparation_calls_path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl"},
+    {"dataset": "ASQA-top5-76", "model_label": "DeepSeek-V4-Flash", "run_directory": "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash/primary", "preparation_calls_path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl"},
+    {"dataset": "HaluEvalQA-3206-afterHuman", "model_label": "Gemma3-4B", "run_directory": "artifacts/runs/rq1/haluevalqa_3206/gemma3_4b/primary", "preparation_calls_path": "artifacts/prepared/haluevalqa_3206.probes.jsonl.calls.jsonl"},
+    {"dataset": "HaluEvalQA-3206-afterHuman", "model_label": "Gemma3-12B", "run_directory": "artifacts/runs/rq1/haluevalqa_3206/gemma3_12b/primary", "preparation_calls_path": "artifacts/prepared/haluevalqa_3206.probes.jsonl.calls.jsonl"},
+    {"dataset": "HaluEvalQA-3206-afterHuman", "model_label": "Phi4-14B", "run_directory": "artifacts/runs/rq1/haluevalqa_3206/phi4_14b/primary", "preparation_calls_path": "artifacts/prepared/haluevalqa_3206.probes.jsonl.calls.jsonl"},
+    {"dataset": "HaluEvalQA-3206-afterHuman", "model_label": "DeepSeek-V4-Flash", "run_directory": "artifacts/runs/rq1/haluevalqa_3206/deepseek_v4_flash/primary", "preparation_calls_path": "artifacts/prepared/haluevalqa_3206.probes.jsonl.calls.jsonl"}
+  ]
+}

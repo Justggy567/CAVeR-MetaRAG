@@ -1,0 +1,195 @@
+{
+  "name": "RQ3-FactoidReplication140-v1.2.0",
+  "frozen_at_utc": "2026-08-30T12:17:00.768215+00:00",
+  "package_manifest_refreshed_at": "2026-09-04",
+  "authority": {
+    "primary_sources": [
+      "audit/replication140/annotator_A_reaudited.csv",
+      "audit/replication140/annotator_B_reaudited.csv",
+      "audit/replication140/adjudicator_C.csv"
+    ],
+    "precedence": "User-approved authoritative JSONL updates override A/B/C; otherwise A/B consensus is final and Adjudicator C is final for required hard-field disagreements.",
+    "hard_final_fields": [
+      "atomicity",
+      "category",
+      "context_support"
+    ],
+    "descriptive_non_filter_fields": [
+      "question_relevance",
+      "evidence_clarity"
+    ]
+  },
+  "frozen_dataset": {
+    "path": "data/replication140/rq3_replication140_final.jsonl",
+    "sha256": "337595d8d4f4dd8ea6240c4b3aded1d851afe36f84bfdc9c9f5c517aba4f302e",
+    "rows": 140
+  },
+  "inputs": {
+    "main700": {
+      "path": "data/main700/rq3_main700_final.jsonl",
+      "sha256": "c3f868a3af409dbf61838f4edce8820c01a8a62f7c7fe70c3457a94dd5db331a",
+      "rows": 700
+    },
+    "annotator_A": {
+      "path": "audit/replication140/annotator_A_reaudited.csv",
+      "sha256": "4ea3d63d7620c77164bfdaedcb22fcca71e7a58db2462f23a86803af6b4ca799",
+      "rows": 140
+    },
+    "annotator_B": {
+      "path": "audit/replication140/annotator_B_reaudited.csv",
+      "sha256": "79408325a623632785ff0d6d4fe45cb0f70ef13709af966b3a6a89e12d8f192a",
+      "rows": 140
+    },
+    "adjudicator_C": {
+      "path": "audit/replication140/adjudicator_C.csv",
+      "sha256": "aed7654d80c9c4d7358a0a4086ef0fb3a83a5daf5187a5a190d7c88cc33756d8",
+      "rows": 10
+    }
+  },
+  "synchronized_complete_data": {
+    "canonical_dataset": {
+      "path": "data/replication140/rq3_replication140_final.jsonl",
+      "sha256": "337595d8d4f4dd8ea6240c4b3aded1d851afe36f84bfdc9c9f5c517aba4f302e",
+      "rows": 140
+    },
+    "selection_crosswalk": {
+      "path": "data/construction/rq3_replication140_selection.jsonl",
+      "sha256": "80a315b1d378afc0b25f5892e34f133d0bf3215a5e7485e964ee58813426d890",
+      "rows": 140
+    },
+    "reserve_queue": {
+      "path": "data/construction/rq3_replication140_reserve_queue.jsonl",
+      "sha256": "cc925b282f6653568b917c01780fb0d231fb44e42a5a0446467821e4ee4b60b3",
+      "rows": 211
+    },
+    "replication_candidate_pool": {
+      "path": "data/construction/rq3_replication_candidate_pool_351.jsonl",
+      "sha256": "a7fa389aeec079e637b6ab555f6ec4d1281f5e227162a302d4574245d8a410f7",
+      "rows": 351
+    },
+    "large_candidate_pool": {
+      "path": "data/construction/rq3_candidate_pool_final.jsonl",
+      "sha256": "415d3186b722843c52aa114f74a5ed239a17e6b63bd9f48b470db474408070e6",
+      "rows": 830
+    }
+  },
+  "human_review": {
+    "annotator_A_rows": 140,
+    "annotator_B_rows": 140,
+    "adjudicator_C_rows": 10,
+    "agreement_before_adjudication": {
+      "atomicity": {
+        "n": 140,
+        "agreements": 138,
+        "percent_agreement": 0.9857142857142858,
+        "cohen_kappa": 0.0
+      },
+      "question_relevance": {
+        "n": 140,
+        "agreements": 108,
+        "percent_agreement": 0.7714285714285715,
+        "cohen_kappa": 0.41052631578947374
+      },
+      "category": {
+        "n": 140,
+        "agreements": 132,
+        "percent_agreement": 0.9428571428571428,
+        "cohen_kappa": 0.9334956356510896
+      },
+      "context_support": {
+        "n": 140,
+        "agreements": 140,
+        "percent_agreement": 1.0,
+        "cohen_kappa": 1.0
+      },
+      "evidence_clarity": {
+        "n": 140,
+        "agreements": 137,
+        "percent_agreement": 0.9785714285714285,
+        "cohen_kappa": 0.0
+      }
+    },
+    "core_hard_field_adjudication_complete": true,
+    "final_atomicity": "PASS for all 140 records",
+    "final_text_matching_A_B_packets": 140
+  },
+  "final_distribution": {
+    "by_source_dataset": {
+      "ASQA": 70,
+      "HALUEVALQA": 70
+    },
+    "by_context_support": {
+      "false": 70,
+      "true": 70
+    },
+    "by_category": {
+      "Cat1": 20,
+      "Cat2": 20,
+      "Cat3": 20,
+      "Cat4": 20,
+      "Cat5": 20,
+      "Cat6": 20,
+      "Cat7": 20
+    },
+    "by_category_support_and_source": {
+      "Cat1|false|ASQA": 5,
+      "Cat1|false|HALUEVALQA": 5,
+      "Cat1|true|ASQA": 5,
+      "Cat1|true|HALUEVALQA": 5,
+      "Cat2|false|ASQA": 5,
+      "Cat2|false|HALUEVALQA": 5,
+      "Cat2|true|ASQA": 5,
+      "Cat2|true|HALUEVALQA": 5,
+      "Cat3|false|ASQA": 5,
+      "Cat3|false|HALUEVALQA": 5,
+      "Cat3|true|ASQA": 5,
+      "Cat3|true|HALUEVALQA": 5,
+      "Cat4|false|ASQA": 5,
+      "Cat4|false|HALUEVALQA": 5,
+      "Cat4|true|ASQA": 5,
+      "Cat4|true|HALUEVALQA": 5,
+      "Cat5|false|ASQA": 5,
+      "Cat5|false|HALUEVALQA": 5,
+      "Cat5|true|ASQA": 5,
+      "Cat5|true|HALUEVALQA": 5,
+      "Cat6|false|ASQA": 5,
+      "Cat6|false|HALUEVALQA": 5,
+      "Cat6|true|ASQA": 5,
+      "Cat6|true|HALUEVALQA": 5,
+      "Cat7|false|ASQA": 5,
+      "Cat7|false|HALUEVALQA": 5,
+      "Cat7|true|ASQA": 5,
+      "Cat7|true|HALUEVALQA": 5
+    },
+    "post_review_stratum_min": 5,
+    "post_review_stratum_max": 5,
+    "all_28_strata_equal_5": true,
+    "fixed_140_ids_retained_without_replacement_after_review": true
+  },
+  "validation": {
+    "main700_overlap_counts": {
+      "source_dataset+source_id": 0,
+      "normalized_question": 0,
+      "normalized_context": 0,
+      "normalized_factoid": 0
+    },
+    "internal_duplicate_groups": {
+      "provenance": [],
+      "question": [],
+      "context": [],
+      "factoid": []
+    },
+    "dataset_candidate_pools_synchronized": true,
+    "clean_dataset_schema": [
+      "id",
+      "source_dataset",
+      "source_id",
+      "question",
+      "context",
+      "factoid",
+      "category",
+      "context_support"
+    ],
+    "replication_run_authorized": true
+  }
+}

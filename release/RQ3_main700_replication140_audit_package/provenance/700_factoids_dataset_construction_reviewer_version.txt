@@ -1,0 +1,33 @@
+RQ3 Diagnostic Factoid Dataset Reconstruction
+
+1. Reconstruction objective
+
+The original diagnostic set contained 700 factoids, with 100 records assigned to each of seven reasoning categories. Reviewer feedback indicated that some records were non-atomic, insufficiently related to their questions, weakly supported by the supplied context, or categorized according to surface cues rather than the reasoning operation required to verify the claim. We therefore treated the original 700 records as a legacy audit pool and reconstructed the diagnostic set using the revised taxonomy.
+
+2. Independent review of the legacy pool
+
+Two annotators independently reviewed all 700 legacy records under a written decision guide, using only the question, context, and factoid. They were blinded to the original category and support labels, router outcome, verifier identity, escalation benefit, and other system outputs. Each record was assessed for atomicity, question relevance, evidence clarity, evidence relation, and primary reasoning category.
+
+Inter-annotator agreement was calculated before adjudication. Raw agreement was 81.6% for the primary category and 92.1% for the binary context-support label; the corresponding Cohen's kappa values were 0.732 and 0.845. The two annotators disagreed on at least one core field for 222 records (31.7%), and these records were resolved by a third human adjudicator. The remaining 478 records (68.3%) retained the agreed A/B decisions.
+
+Following adjudication, 206 legacy records (29.4%) were retained without label changes, 126 (18.0%) were relabeled, and 368 (52.6%) were excluded because they did not satisfy the revised inclusion criteria. Thus, the label-revision rate was 18.0%, while the overall intervention rate, counting both relabeling and exclusion, was 70.6%. These rates describe the audit of the original legacy pool and are distinct from the proportion of candidate records used during final dataset assembly.
+
+3. Source-aware selection of legacy records
+
+The eligible legacy pool was not transferred wholesale into the reconstructed Main-700 set. ASQA and HaluEvalQA differ in their context format and content characteristics, and an excessive concentration of records from one source could introduce corpus-specific effects into the RQ3 results. We therefore used source-aware, stratified selection to reduce this imbalance while preserving the required Category × Support composition. Within each target stratum, records were selected under a fixed random seed, subject to duplicate removal and a question-level cap. Where necessary, legacy records were exchanged for manually approved candidate records from the underrepresented source. This procedure was intended to mitigate source imbalance rather than enforce an artificial 1:1 source ratio. A total of 263 legacy factoids were retained in the final Main-700 set.
+
+4. Construction and review of the candidate pool
+
+The replenishment pool was constructed from the original ASQA (948 questions) and HaluEvalQA (10,000 questions) source collections. Candidate generation was guided by the remaining deficits in the 14 Category × Support strata. Supported candidates were constructed from question–answer information and then checked against the context. Unsupported candidates were constructed as complete claims whose truth was not supported by the supplied context. At most one factoid was retained for each question.
+
+The category requested during candidate generation was used only as a sampling target and was not treated as the final label. Every candidate was manually reviewed for the following criteria: (1) it formed a complete and atomic proposition; (2) it was relevant to the associated question; (3) its support status could be determined from the context; and (4) its category matched the principal reasoning operation required to verify the claim. Only candidates that passed this human review were admitted to the final candidate pool. From this pool, 437 records were selected for Main-700.
+
+5. Final assembly and freezing
+
+The final diagnostic set combines 206 retained legacy factoids with 437 manually approved candidate factoids. Thus, 62.4% of the final set was supplied by the audited candidate pool. This replenishment proportion is larger than the legacy exclusion rate because source-aware selection was also used to reduce ASQA/HaluEvalQA imbalance within the required strata. The final set contains seven reasoning categories crossed with two context-support states, producing 14 strata with 50 records per stratum:
+
+    7 categories × (50 supported + 50 unsupported) = 700 factoids.
+
+The final set contains 229 records whose questions and contexts originate from ASQA and 471 from HaluEvalQA. These source counts reflect source-aware control together with the availability of qualified records in each reasoning stratum; equal source counts were not imposed at the expense of category or support validity.
+
+Each frozen record contains a Main identifier, source dataset, source identifier, question, context, factoid, final category, and context-support label. The final Main-700 file, candidate pool, adjudicated legacy records, and source summary are versioned and verified using SHA-256 hashes.

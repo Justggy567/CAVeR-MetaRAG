@@ -1,0 +1,224 @@
+{
+  "audit_schema_version": "rq3-replication140-package-audit-v3",
+  "inputs": {
+    "dataset": {
+      "path": "data/replication140/rq3_replication140_final.jsonl",
+      "sha256": "337595d8d4f4dd8ea6240c4b3aded1d851afe36f84bfdc9c9f5c517aba4f302e"
+    },
+    "annotator_A": {
+      "path": "audit/replication140/annotator_A_reaudited.csv",
+      "sha256": "4ea3d63d7620c77164bfdaedcb22fcca71e7a58db2462f23a86803af6b4ca799"
+    },
+    "annotator_B": {
+      "path": "audit/replication140/annotator_B_reaudited.csv",
+      "sha256": "79408325a623632785ff0d6d4fe45cb0f70ef13709af966b3a6a89e12d8f192a"
+    },
+    "adjudicator_C": {
+      "path": "audit/replication140/adjudicator_C.csv",
+      "sha256": "aed7654d80c9c4d7358a0a4086ef0fb3a83a5daf5187a5a190d7c88cc33756d8"
+    }
+  },
+  "input_alignment": {
+    "id_coverage_complete": true,
+    "text_mismatches": {
+      "annotator_A": [],
+      "annotator_B": [],
+      "adjudicator_C": []
+    },
+    "annotator_A_blind_packet_schema": true
+  },
+  "pre_adjudication_agreement": {
+    "atomicity": {
+      "n": 140,
+      "agreements": 138,
+      "disagreements": 2,
+      "percent_agreement": 0.9857142857142858,
+      "expected_agreement": 0.9857142857142858,
+      "cohen_kappa": 0.0,
+      "annotator_A_distribution": {
+        "FAIL": 2,
+        "PASS": 138
+      },
+      "annotator_B_distribution": {
+        "PASS": 140
+      }
+    },
+    "question_relevance": {
+      "n": 140,
+      "agreements": 108,
+      "disagreements": 32,
+      "percent_agreement": 0.7714285714285715,
+      "expected_agreement": 0.6122448979591837,
+      "cohen_kappa": 0.41052631578947374,
+      "annotator_A_distribution": {
+        "FAIL": 20,
+        "PASS": 120
+      },
+      "annotator_B_distribution": {
+        "FAIL": 48,
+        "PASS": 92
+      }
+    },
+    "primary_category": {
+      "n": 140,
+      "agreements": 132,
+      "disagreements": 8,
+      "percent_agreement": 0.9428571428571428,
+      "expected_agreement": 0.14076530612244897,
+      "cohen_kappa": 0.9334956356510896,
+      "annotator_A_distribution": {
+        "CAT1": 21,
+        "CAT2": 20,
+        "CAT3": 18,
+        "CAT4": 23,
+        "CAT5": 16,
+        "CAT6": 19,
+        "CAT7": 21,
+        "N/A": 2
+      },
+      "annotator_B_distribution": {
+        "CAT1": 20,
+        "CAT2": 20,
+        "CAT3": 21,
+        "CAT4": 20,
+        "CAT5": 20,
+        "CAT6": 19,
+        "CAT7": 20
+      }
+    },
+    "context_support": {
+      "n": 140,
+      "agreements": 140,
+      "disagreements": 0,
+      "percent_agreement": 1.0,
+      "expected_agreement": 0.5,
+      "cohen_kappa": 1.0,
+      "annotator_A_distribution": {
+        "FALSE": 70,
+        "TRUE": 70
+      },
+      "annotator_B_distribution": {
+        "FALSE": 70,
+        "TRUE": 70
+      }
+    },
+    "evidence_clarity": {
+      "n": 140,
+      "agreements": 137,
+      "disagreements": 3,
+      "percent_agreement": 0.9785714285714285,
+      "expected_agreement": 0.9785714285714285,
+      "cohen_kappa": 0.0,
+      "annotator_A_distribution": {
+        "CLEAR": 137,
+        "UNCLEAR": 3
+      },
+      "annotator_B_distribution": {
+        "CLEAR": 140
+      }
+    }
+  },
+  "disagreement_ids_by_field": {
+    "atomicity": [
+      "REP_0046",
+      "REP_0098"
+    ],
+    "question_relevance": [
+      "REP_0023",
+      "REP_0024",
+      "REP_0025",
+      "REP_0026",
+      "REP_0029",
+      "REP_0030",
+      "REP_0031",
+      "REP_0032",
+      "REP_0033",
+      "REP_0034",
+      "REP_0035",
+      "REP_0036",
+      "REP_0037",
+      "REP_0039",
+      "REP_0040",
+      "REP_0056",
+      "REP_0057",
+      "REP_0060",
+      "REP_0077",
+      "REP_0080",
+      "REP_0092",
+      "REP_0112",
+      "REP_0114",
+      "REP_0115",
+      "REP_0116",
+      "REP_0117",
+      "REP_0118",
+      "REP_0119",
+      "REP_0131",
+      "REP_0133",
+      "REP_0134",
+      "REP_0135"
+    ],
+    "primary_category": [
+      "REP_0013",
+      "REP_0046",
+      "REP_0049",
+      "REP_0089",
+      "REP_0096",
+      "REP_0098",
+      "REP_0100",
+      "REP_0109"
+    ],
+    "context_support": [],
+    "evidence_clarity": [
+      "REP_0014",
+      "REP_0065",
+      "REP_0085"
+    ]
+  },
+  "any_field_disagreement_records": 43,
+  "hard_field_disagreement_records": 8,
+  "adjudication": {
+    "rows": 10,
+    "all_hard_disagreements_covered": true,
+    "hard_disagreements_missing": [],
+    "descriptive_disagreements_not_adjudicated": [
+      "REP_0023",
+      "REP_0024",
+      "REP_0025",
+      "REP_0026",
+      "REP_0029",
+      "REP_0030",
+      "REP_0031",
+      "REP_0032",
+      "REP_0033",
+      "REP_0034",
+      "REP_0035",
+      "REP_0036",
+      "REP_0037",
+      "REP_0039",
+      "REP_0040",
+      "REP_0056",
+      "REP_0057",
+      "REP_0060",
+      "REP_0065",
+      "REP_0077",
+      "REP_0080",
+      "REP_0092",
+      "REP_0112",
+      "REP_0114",
+      "REP_0115",
+      "REP_0116",
+      "REP_0117",
+      "REP_0118",
+      "REP_0119",
+      "REP_0131",
+      "REP_0133",
+      "REP_0134",
+      "REP_0135"
+    ]
+  },
+  "final_consistency": {
+    "category_support_atomicity_mismatches": [],
+    "matches_frozen_dataset": true,
+    "records_matching_A_B_text": 140
+  }
+}

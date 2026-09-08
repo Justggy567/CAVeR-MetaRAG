@@ -1,0 +1,78 @@
+{
+  "datasets": [
+    {
+      "name": "HaluEvalQA-3206-afterHuman",
+      "path": "data/frozen/haluevalqa_3206_afterHuman.json",
+      "format": "paired_answers",
+      "expected_count": 3206,
+      "expected_sha256": "52b474d61f76f72b267a8a88985cdb638893a401fd0b7c62fdb5db697aa4d699"
+    },
+    {
+      "name": "ASQA-top5-76",
+      "path": "data/frozen/asqa_top5_76_cleaned_final.json",
+      "format": "paired_answers",
+      "expected_count": 76,
+      "expected_sha256": "b4189a7be2798cee0f6f1cf43a07597682ac7eb199ae29f9d6f105a670b69f78"
+    },
+    {
+      "name": "RQ3-main700-final",
+      "path": "data/frozen/rq3_main700_final.jsonl",
+      "format": "factoids",
+      "expected_count": 700,
+      "expected_sha256": "c3f868a3af409dbf61838f4edce8820c01a8a62f7c7fe70c3457a94dd5db331a",
+      "expected_category_counts": {
+        "Cat1": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        },
+        "Cat2": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        },
+        "Cat3": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        },
+        "Cat4": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        },
+        "Cat5": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        },
+        "Cat6": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        },
+        "Cat7": {
+          "n": 100,
+          "supported": 50,
+          "unsupported": 50
+        }
+      }
+    },
+    {
+      "name": "RQ3-replication140-final",
+      "path": "data/frozen/rq3_replication140_final.jsonl",
+      "format": "factoids",
+      "expected_count": 140,
+      "expected_sha256": "337595d8d4f4dd8ea6240c4b3aded1d851afe36f84bfdc9c9f5c517aba4f302e",
+      "expected_category_counts": {
+        "Cat1": {"n": 20, "supported": 10, "unsupported": 10},
+        "Cat2": {"n": 20, "supported": 10, "unsupported": 10},
+        "Cat3": {"n": 20, "supported": 10, "unsupported": 10},
+        "Cat4": {"n": 20, "supported": 10, "unsupported": 10},
+        "Cat5": {"n": 20, "supported": 10, "unsupported": 10},
+        "Cat6": {"n": 20, "supported": 10, "unsupported": 10},
+        "Cat7": {"n": 20, "supported": 10, "unsupported": 10}
+      }
+    }
+  ]
+}

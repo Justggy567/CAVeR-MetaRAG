@@ -1,0 +1,41 @@
+{
+  "prepared_path": "artifacts/prepared/rq3_main700.probes.jsonl",
+  "output_root": "artifacts/runs/rq3/main700/structure_aware",
+  "run_id": "primary",
+  "resume": true,
+  "routing_policy": "structure_aware",
+  "anomaly_count_threshold": 2,
+  "threshold": 0.5,
+  "scoring_profile": "paper_five_statement_mean",
+  "response_aggregation": "max_factoid_score",
+  "stage1": {
+    "backend": "ollama",
+    "model_id": "gemma3:4b",
+    "endpoint": "http://localhost:11434/api/chat",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "seed": 42,
+    "num_ctx": 8192,
+    "num_predict": 100,
+    "keep_alive": "5m",
+    "timeout_seconds": 120,
+    "cache_path": "artifacts/cache/rq3_main700/gemma3_4b.jsonl"
+  },
+  "stage2": {
+    "backend": "openai_compatible",
+    "model_id": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 128,
+    "seed": null,
+    "thinking_mode": "disabled",
+    "timeout_seconds": 120,
+    "max_retries": 4,
+    "cache_path": "artifacts/cache/rq3_main700/deepseek_v4_flash.jsonl"
+  },
+  "environment": {"concurrency": 1, "execution": "sequential"},
+  "pricing": {}
+}

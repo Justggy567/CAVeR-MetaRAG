@@ -1,0 +1,595 @@
+{
+  "schema_version": "rq3-main700-replication140-package-verification-v3",
+  "verification_status": "PASS",
+  "checks": [
+    {
+      "name": "main700_row_count",
+      "status": "PASS",
+      "details": 700
+    },
+    {
+      "name": "main700_unique_ids",
+      "status": "PASS",
+      "details": 700
+    },
+    {
+      "name": "main700_category_balance",
+      "status": "PASS",
+      "details": {
+        "Cat1": 100,
+        "Cat4": 100,
+        "Cat5": 100,
+        "Cat3": 100,
+        "Cat7": 100,
+        "Cat6": 100,
+        "Cat2": 100
+      }
+    },
+    {
+      "name": "main700_support_balance",
+      "status": "PASS",
+      "details": {
+        "TRUE": 350,
+        "FALSE": 350
+      }
+    },
+    {
+      "name": "main700_14_strata_equal_50",
+      "status": "PASS",
+      "details": {
+        "Cat1|FALSE": 50,
+        "Cat1|TRUE": 50,
+        "Cat2|FALSE": 50,
+        "Cat2|TRUE": 50,
+        "Cat3|FALSE": 50,
+        "Cat3|TRUE": 50,
+        "Cat4|FALSE": 50,
+        "Cat4|TRUE": 50,
+        "Cat5|FALSE": 50,
+        "Cat5|TRUE": 50,
+        "Cat6|FALSE": 50,
+        "Cat6|TRUE": 50,
+        "Cat7|FALSE": 50,
+        "Cat7|TRUE": 50
+      }
+    },
+    {
+      "name": "main700_annotation_id_coverage",
+      "status": "PASS",
+      "details": {
+        "main_b_order_errors": []
+      }
+    },
+    {
+      "name": "main700_A_B_inputs_match_frozen_text",
+      "status": "PASS",
+      "details": {
+        "annotator_A": [],
+        "annotator_B": []
+      }
+    },
+    {
+      "name": "main700_hard_disagreement_count",
+      "status": "PASS",
+      "details": 47
+    },
+    {
+      "name": "main700_adjudication_rows",
+      "status": "PASS",
+      "details": 53
+    },
+    {
+      "name": "main700_all_hard_disagreements_adjudicated",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "main700_adjudicated_labels_match_frozen",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "legacy_annotation_id_coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy_disagreement_union_count",
+      "status": "PASS",
+      "details": 222
+    },
+    {
+      "name": "legacy_adjudication_exact_coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy_action_counts",
+      "status": "PASS",
+      "details": {
+        "RELABEL": 126,
+        "REMOVE": 368,
+        "RETAIN_UNCHANGED": 206
+      }
+    },
+    {
+      "name": "replication140_row_count",
+      "status": "PASS",
+      "details": 140
+    },
+    {
+      "name": "replication140_unique_ids",
+      "status": "PASS"
+    },
+    {
+      "name": "replication140_category_balance",
+      "status": "PASS",
+      "details": {
+        "Cat1": 20,
+        "Cat2": 20,
+        "Cat3": 20,
+        "Cat4": 20,
+        "Cat5": 20,
+        "Cat6": 20,
+        "Cat7": 20
+      }
+    },
+    {
+      "name": "replication140_support_balance",
+      "status": "PASS",
+      "details": {
+        "TRUE": 70,
+        "FALSE": 70
+      }
+    },
+    {
+      "name": "replication140_source_balance",
+      "status": "PASS",
+      "details": {
+        "ASQA": 70,
+        "HALUEVALQA": 70
+      }
+    },
+    {
+      "name": "replication140_28_strata_equal_5",
+      "status": "PASS"
+    },
+    {
+      "name": "replication140_zero_main_overlap",
+      "status": "PASS",
+      "details": {
+        "source_dataset+source_id": 0,
+        "normalized_question": 0,
+        "normalized_context": 0,
+        "normalized_factoid": 0
+      }
+    },
+    {
+      "name": "main700_freeze_hash_matches",
+      "status": "PASS",
+      "details": {
+        "manifest_sha256": "c3f868a3af409dbf61838f4edce8820c01a8a62f7c7fe70c3457a94dd5db331a"
+      }
+    },
+    {
+      "name": "replication140_package_freeze_hashes_match",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "replication_candidate_pool_deterministic_rebuild",
+      "status": "PASS",
+      "details": {
+        "rebuilt": 351,
+        "packaged": 351
+      }
+    },
+    {
+      "name": "replication140_deterministic_rebuild",
+      "status": "PASS"
+    },
+    {
+      "name": "replication140_selection_crosswalk_rebuild",
+      "status": "PASS"
+    },
+    {
+      "name": "replication140_reserve_queue_rebuild",
+      "status": "PASS"
+    },
+    {
+      "name": "replication_annotation_id_coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "replication_A_B_C_inputs_match_frozen",
+      "status": "PASS",
+      "details": {
+        "annotator_A": [],
+        "annotator_B": [],
+        "adjudicator_C": []
+      }
+    },
+    {
+      "name": "replication_annotator_A_blind_packet_schema",
+      "status": "PASS",
+      "details": {
+        "forbidden_fields": [
+          "original_category",
+          "original_context_support"
+        ]
+      }
+    },
+    {
+      "name": "replication_any_disagreement_union_count",
+      "status": "PASS",
+      "details": 43
+    },
+    {
+      "name": "replication_hard_disagreement_union_count",
+      "status": "PASS",
+      "details": 8
+    },
+    {
+      "name": "replication_adjudicator_rows",
+      "status": "PASS",
+      "details": 10
+    },
+    {
+      "name": "replication_all_hard_disagreements_adjudicated",
+      "status": "PASS"
+    },
+    {
+      "name": "replication_adjudicated_labels_match_frozen",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "sha256_manifest",
+      "status": "PASS",
+      "details": {
+        "verified": 36,
+        "failures": []
+      }
+    }
+  ],
+  "metrics": {
+    "main700": {
+      "records": 700,
+      "pre_adjudication_iaa": {
+        "atomicity": {
+          "n": 700,
+          "agreements": 700,
+          "disagreements": 0,
+          "percent_agreement": 1.0,
+          "expected_agreement": 1.0,
+          "cohen_kappa": null,
+          "annotator_A_distribution": {
+            "PASS": 700
+          },
+          "annotator_B_distribution": {
+            "PASS": 700
+          }
+        },
+        "question_relevance": {
+          "n": 700,
+          "agreements": 700,
+          "disagreements": 0,
+          "percent_agreement": 1.0,
+          "expected_agreement": 0.7612612244897958,
+          "cohen_kappa": 1.0,
+          "annotator_A_distribution": {
+            "FAIL": 97,
+            "PASS": 603
+          },
+          "annotator_B_distribution": {
+            "FAIL": 97,
+            "PASS": 603
+          }
+        },
+        "primary_category": {
+          "n": 700,
+          "agreements": 672,
+          "disagreements": 28,
+          "percent_agreement": 0.96,
+          "expected_agreement": 0.14284081632653062,
+          "cohen_kappa": 0.9533342222052913,
+          "annotator_A_distribution": {
+            "CAT1": 97,
+            "CAT2": 103,
+            "CAT3": 99,
+            "CAT4": 109,
+            "CAT5": 97,
+            "CAT6": 95,
+            "CAT7": 100
+          },
+          "annotator_B_distribution": {
+            "CAT1": 97,
+            "CAT2": 101,
+            "CAT3": 95,
+            "CAT4": 99,
+            "CAT5": 107,
+            "CAT6": 99,
+            "CAT7": 102
+          }
+        },
+        "context_support": {
+          "n": 700,
+          "agreements": 678,
+          "disagreements": 22,
+          "percent_agreement": 0.9685714285714285,
+          "expected_agreement": 0.5000040816326531,
+          "cohen_kappa": 0.9371423440191348,
+          "annotator_A_distribution": {
+            "FALSE": 349,
+            "TRUE": 351
+          },
+          "annotator_B_distribution": {
+            "FALSE": 349,
+            "TRUE": 351
+          }
+        },
+        "evidence_clarity": {
+          "n": 700,
+          "agreements": 700,
+          "disagreements": 0,
+          "percent_agreement": 1.0,
+          "expected_agreement": 1.0,
+          "cohen_kappa": null,
+          "annotator_A_distribution": {
+            "CLEAR": 700
+          },
+          "annotator_B_distribution": {
+            "CLEAR": 700
+          }
+        }
+      },
+      "hard_disagreement_records": 47,
+      "adjudication_rows": 53,
+      "legacy_pre_adjudication_iaa": {
+        "atomicity": {
+          "n": 700,
+          "agreements": 663,
+          "disagreements": 37,
+          "percent_agreement": 0.9471428571428572,
+          "expected_agreement": 0.8303183673469388,
+          "cohen_kappa": 0.6884922544020016,
+          "annotator_A_distribution": {
+            "FAIL": 62,
+            "PASS": 638
+          },
+          "annotator_B_distribution": {
+            "FAIL": 69,
+            "PASS": 631
+          }
+        },
+        "question_relevance": {
+          "n": 700,
+          "agreements": 612,
+          "disagreements": 88,
+          "percent_agreement": 0.8742857142857143,
+          "expected_agreement": 0.503265306122449,
+          "cohen_kappa": 0.7469186524239935,
+          "annotator_A_distribution": {
+            "FAIL": 270,
+            "PASS": 430
+          },
+          "annotator_B_distribution": {
+            "FAIL": 340,
+            "PASS": 360
+          }
+        },
+        "evidence_clarity": {
+          "n": 700,
+          "agreements": 649,
+          "disagreements": 51,
+          "percent_agreement": 0.9271428571428572,
+          "expected_agreement": 0.9198204081632653,
+          "cohen_kappa": 0.09132559560171105,
+          "annotator_A_distribution": {
+            "AMBIGUOUS": 6,
+            "CLEAR": 694
+          },
+          "annotator_B_distribution": {
+            "AMBIGUOUS": 51,
+            "CLEAR": 649
+          }
+        },
+        "evidence_relation": {
+          "n": 700,
+          "agreements": 624,
+          "disagreements": 76,
+          "percent_agreement": 0.8914285714285715,
+          "expected_agreement": 0.3730285714285714,
+          "cohen_kappa": 0.8268319358366752,
+          "annotator_A_distribution": {
+            "AMBIGUOUS": 4,
+            "CONTRADICTED": 129,
+            "ENTAILED": 344,
+            "NOT_ENOUGH_INFO": 223
+          },
+          "annotator_B_distribution": {
+            "AMBIGUOUS": 5,
+            "CONTRADICTED": 146,
+            "ENTAILED": 343,
+            "NOT_ENOUGH_INFO": 206
+          }
+        },
+        "primary_category": {
+          "n": 700,
+          "agreements": 571,
+          "disagreements": 129,
+          "percent_agreement": 0.8157142857142857,
+          "expected_agreement": 0.3135918367346939,
+          "cohen_kappa": 0.7315216744960458,
+          "annotator_A_distribution": {
+            "CAT1": 134,
+            "CAT2": 80,
+            "CAT3": 48,
+            "CAT4": 49,
+            "CAT5": 37,
+            "CAT6": 23,
+            "CAT7": 1,
+            "INVALID": 328
+          },
+          "annotator_B_distribution": {
+            "CAT1": 104,
+            "CAT2": 77,
+            "CAT3": 29,
+            "CAT4": 38,
+            "CAT5": 30,
+            "CAT6": 27,
+            "CAT7": 3,
+            "INVALID": 392
+          }
+        },
+        "binary_support_entailed_vs_nonentailed": {
+          "n": 700,
+          "agreements": 649,
+          "disagreements": 51,
+          "percent_agreement": 0.9271428571428572,
+          "expected_agreement": 0.5001714285714286,
+          "cohen_kappa": 0.8542357379673031,
+          "annotator_A_distribution": {
+            "FALSE": 356,
+            "TRUE": 344
+          },
+          "annotator_B_distribution": {
+            "FALSE": 357,
+            "TRUE": 343
+          }
+        }
+      },
+      "legacy_actions": {
+        "RELABEL": 126,
+        "REMOVE": 368,
+        "RETAIN_UNCHANGED": 206
+      },
+      "legacy_changed_dimensions": {
+        "": 206,
+        "CATEGORY": 102,
+        "CATEGORY;SUPPORT": 5,
+        "ELIGIBILITY": 368,
+        "SUPPORT": 19
+      },
+      "legacy_relabel_rate": 0.18,
+      "legacy_exclusion_rate": 0.5257142857142857,
+      "legacy_overall_intervention_rate": 0.7057142857142857,
+      "final_atomicity_validation": "All 700 frozen records are validated as atomic by the final A/B review and adjudication chain. Development-stage pre-rewrite snapshots are not part of this final-only package."
+    },
+    "replication140": {
+      "records": 140,
+      "pre_adjudication_iaa": {
+        "atomicity": {
+          "n": 140,
+          "agreements": 138,
+          "disagreements": 2,
+          "percent_agreement": 0.9857142857142858,
+          "expected_agreement": 0.9857142857142858,
+          "cohen_kappa": 0.0,
+          "annotator_A_distribution": {
+            "FAIL": 2,
+            "PASS": 138
+          },
+          "annotator_B_distribution": {
+            "PASS": 140
+          }
+        },
+        "question_relevance": {
+          "n": 140,
+          "agreements": 108,
+          "disagreements": 32,
+          "percent_agreement": 0.7714285714285715,
+          "expected_agreement": 0.6122448979591837,
+          "cohen_kappa": 0.41052631578947374,
+          "annotator_A_distribution": {
+            "FAIL": 20,
+            "PASS": 120
+          },
+          "annotator_B_distribution": {
+            "FAIL": 48,
+            "PASS": 92
+          }
+        },
+        "primary_category": {
+          "n": 140,
+          "agreements": 132,
+          "disagreements": 8,
+          "percent_agreement": 0.9428571428571428,
+          "expected_agreement": 0.14076530612244897,
+          "cohen_kappa": 0.9334956356510896,
+          "annotator_A_distribution": {
+            "CAT1": 21,
+            "CAT2": 20,
+            "CAT3": 18,
+            "CAT4": 23,
+            "CAT5": 16,
+            "CAT6": 19,
+            "CAT7": 21,
+            "N/A": 2
+          },
+          "annotator_B_distribution": {
+            "CAT1": 20,
+            "CAT2": 20,
+            "CAT3": 21,
+            "CAT4": 20,
+            "CAT5": 20,
+            "CAT6": 19,
+            "CAT7": 20
+          }
+        },
+        "context_support": {
+          "n": 140,
+          "agreements": 140,
+          "disagreements": 0,
+          "percent_agreement": 1.0,
+          "expected_agreement": 0.5,
+          "cohen_kappa": 1.0,
+          "annotator_A_distribution": {
+            "FALSE": 70,
+            "TRUE": 70
+          },
+          "annotator_B_distribution": {
+            "FALSE": 70,
+            "TRUE": 70
+          }
+        },
+        "evidence_clarity": {
+          "n": 140,
+          "agreements": 137,
+          "disagreements": 3,
+          "percent_agreement": 0.9785714285714285,
+          "expected_agreement": 0.9785714285714285,
+          "cohen_kappa": 0.0,
+          "annotator_A_distribution": {
+            "CLEAR": 137,
+            "UNCLEAR": 3
+          },
+          "annotator_B_distribution": {
+            "CLEAR": 140
+          }
+        }
+      },
+      "any_field_disagreement_records": 43,
+      "hard_field_disagreement_records": 8,
+      "adjudicator_rows": 10,
+      "category_or_support_changes_vs_sampled_set": 0,
+      "final_records_with_matching_A_B_text": 140,
+      "main700_overlap_counts": {
+        "source_dataset+source_id": 0,
+        "normalized_question": 0,
+        "normalized_context": 0,
+        "normalized_factoid": 0
+      },
+      "candidate_pool": {
+        "input": 830,
+        "excluded_as_main_overlap": 479,
+        "retained": 351,
+        "selected": 140,
+        "reserve": 211
+      }
+    },
+    "auditability_notes": {
+      "replication_A_B_text_inputs_match_frozen": true,
+      "replication_annotator_A_blind_packet_schema": true,
+      "replication_descriptive_disagreements_not_fully_adjudicated": true
+    }
+  }
+}

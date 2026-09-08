@@ -1,0 +1,37 @@
+{
+  "prepared_path": "artifacts/reviewer/hosted_repeats_20260829/prepared/asqa_top5_76.hosted_repeat.probes.jsonl",
+  "output_root": "artifacts/reviewer/hosted_repeats_20260829/runs/asqa_top5_76",
+  "run_id": "replicate_01",
+  "resume": true,
+  "routing_policy": "no_escalation",
+  "threshold": 0.5,
+  "scoring_profile": "paper_five_statement_mean",
+  "response_aggregation": "max_factoid_score",
+  "stage1": {
+    "backend": "openai_compatible",
+    "model_id": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 128,
+    "seed": null,
+    "thinking_mode": "disabled",
+    "timeout_seconds": 120,
+    "max_retries": 4,
+    "cache_path": "artifacts/reviewer/hosted_repeats_20260829/fresh_caches/asqa_top5_76/replicate_01.jsonl"
+  },
+  "stage2": null,
+  "environment": {
+    "concurrency": 1,
+    "execution": "sequential",
+    "repeat_design": "fresh application cache per replicate"
+  },
+  "pricing": {
+    "deepseek-v4-flash": {
+      "cached_input_per_million": 0.1,
+      "uncached_input_per_million": 3,
+      "output_per_million": 9
+    }
+  }
+}

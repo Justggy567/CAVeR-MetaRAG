@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{RQ2 primary routing-policy comparison.}
+\label{tab:rq2-primary-policies}
+\begin{tabular}{lllllll}
+\toprule
+Dataset & Policy & N & Accuracy & F1 & Escalation & Net gain \\
+\midrule
+ASQA-top5-76 & paradox\_only & 152 & 0.941 & 0.941 & 0.776 & 15 \\
+ASQA-top5-76 & strict & 152 & 0.947 & 0.949 & 0.836 & 16 \\
+ASQA-top5-76 & structure\_aware & 152 & 0.947 & 0.949 & 0.822 & 16 \\
+HaluEvalQA-3206-afterHuman & paradox\_only & 6356 & 0.836 & 0.817 & 0.462 & 232 \\
+HaluEvalQA-3206-afterHuman & strict & 6356 & 0.852 & 0.838 & 0.543 & 332 \\
+HaluEvalQA-3206-afterHuman & structure\_aware & 6356 & 0.849 & 0.835 & 0.514 & 317 \\
+\bottomrule
+\end{tabular}
+\end{table}

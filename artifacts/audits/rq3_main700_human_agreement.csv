@@ -1,0 +1,6 @@
+﻿field,n,agreement_count,agreement_rate,cohen_kappa,labels,hard_filter
+primary_category,700,672,0.96,0.9533342222052913,"['Cat1', 'Cat2', 'Cat3', 'Cat4', 'Cat5', 'Cat6', 'Cat7']",True
+context_support,700,678,0.9685714285714285,0.9371423440191348,"['FALSE', 'TRUE']",True
+question_relevance_descriptive,700,700,1.0,1.0,"['FAIL', 'PASS']",False
+atomicity,700,700,1.0,,['PASS'],True
+evidence_clarity_descriptive,700,700,1.0,,['CLEAR'],False

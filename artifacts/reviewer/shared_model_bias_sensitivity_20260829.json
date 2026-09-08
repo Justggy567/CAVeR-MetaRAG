@@ -1,0 +1,526 @@
+{
+  "analysis_type": "independent_verifier_sensitivity_on_deepseek_generated_probes",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 42,
+  "datasets": {
+    "ASQA-top5-76": {
+      "independent_majority_agreement_with_shared_model": {
+        "agreement_count": 144,
+        "agreement_rate": 0.9473684210526315,
+        "cohen_kappa": 0.8945176960444134,
+        "labels": [
+          "False",
+          "True"
+        ],
+        "n": 152
+      },
+      "independent_majority_confusion": {
+        "accuracy": 0.9473684210526315,
+        "f1": 0.948051948051948,
+        "fn": 3,
+        "fp": 5,
+        "n": 152,
+        "precision": 0.9358974358974359,
+        "recall": 0.9605263157894737,
+        "tn": 71,
+        "tp": 73
+      },
+      "independent_verifiers": [
+        "Gemma3-4B",
+        "Gemma3-12B",
+        "Phi4-14B"
+      ],
+      "model_confusions": {
+        "DeepSeek-V4-Flash": {
+          "accuracy": 0.9473684210526315,
+          "f1": 0.949367088607595,
+          "fn": 1,
+          "fp": 7,
+          "n": 152,
+          "precision": 0.9146341463414634,
+          "recall": 0.9868421052631579,
+          "tn": 69,
+          "tp": 75
+        },
+        "Gemma3-12B": {
+          "accuracy": 0.9473684210526315,
+          "f1": 0.9473684210526315,
+          "fn": 4,
+          "fp": 4,
+          "n": 152,
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "tn": 72,
+          "tp": 72
+        },
+        "Gemma3-4B": {
+          "accuracy": 0.8421052631578947,
+          "f1": 0.8309859154929577,
+          "fn": 17,
+          "fp": 7,
+          "n": 152,
+          "precision": 0.8939393939393939,
+          "recall": 0.7763157894736842,
+          "tn": 69,
+          "tp": 59
+        },
+        "Phi4-14B": {
+          "accuracy": 0.9210526315789473,
+          "f1": 0.9268292682926829,
+          "fn": 0,
+          "fp": 12,
+          "n": 152,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "tn": 64,
+          "tp": 76
+        }
+      },
+      "n_factoids": 801,
+      "n_probe_verdicts_per_model": 4005,
+      "n_responses": 152,
+      "paired_comparison_majority_vs_shared": {
+        "accuracy_difference_second_minus_first": {
+          "ci_high": 0.039473684210526216,
+          "ci_low": -0.03289473684210531,
+          "clusters": 76,
+          "difference": 0.0,
+          "repetitions": 2000,
+          "responses": 152,
+          "seed": 42
+        },
+        "f1_difference_second_minus_first": {
+          "ci_high": 0.039818746376874256,
+          "ci_low": -0.032337089661930385,
+          "clusters": 76,
+          "difference": 0.0013151405556469653,
+          "repetitions": 2000,
+          "responses": 152,
+          "seed": 42
+        },
+        "first": "Independent-local-majority",
+        "mcnemar": {
+          "discordant": 8,
+          "first_correct_second_wrong": 4,
+          "first_wrong_second_correct": 4,
+          "p_value_two_sided_exact": 1.0
+        },
+        "second": "DeepSeek-V4-Flash"
+      },
+      "paired_comparisons_independent_vs_shared": {
+        "Gemma3-12B": {
+          "accuracy_difference_second_minus_first": {
+            "ci_high": 0.03289473684210531,
+            "ci_low": -0.03289473684210531,
+            "clusters": 76,
+            "difference": 0.0,
+            "repetitions": 2000,
+            "responses": 152,
+            "seed": 42
+          },
+          "f1_difference_second_minus_first": {
+            "ci_high": 0.037605882553818096,
+            "ci_low": -0.03185061236485441,
+            "clusters": 76,
+            "difference": 0.0019986675549634736,
+            "repetitions": 2000,
+            "responses": 152,
+            "seed": 42
+          },
+          "first": "Gemma3-12B",
+          "mcnemar": {
+            "discordant": 8,
+            "first_correct_second_wrong": 4,
+            "first_wrong_second_correct": 4,
+            "p_value_two_sided_exact": 1.0
+          },
+          "second": "DeepSeek-V4-Flash"
+        },
+        "Gemma3-4B": {
+          "accuracy_difference_second_minus_first": {
+            "ci_high": 0.16447368421052633,
+            "ci_low": 0.046052631578947345,
+            "clusters": 76,
+            "difference": 0.10526315789473684,
+            "repetitions": 2000,
+            "responses": 152,
+            "seed": 42
+          },
+          "f1_difference_second_minus_first": {
+            "ci_high": 0.1863952959036851,
+            "ci_low": 0.05126795500561214,
+            "clusters": 76,
+            "difference": 0.11838117311463725,
+            "repetitions": 2000,
+            "responses": 152,
+            "seed": 42
+          },
+          "first": "Gemma3-4B",
+          "mcnemar": {
+            "discordant": 28,
+            "first_correct_second_wrong": 6,
+            "first_wrong_second_correct": 22,
+            "p_value_two_sided_exact": 0.0037191659212112427
+          },
+          "second": "DeepSeek-V4-Flash"
+        },
+        "Phi4-14B": {
+          "accuracy_difference_second_minus_first": {
+            "ci_high": 0.05921052631578949,
+            "ci_low": -0.006578947368421018,
+            "clusters": 76,
+            "difference": 0.02631578947368418,
+            "repetitions": 2000,
+            "responses": 152,
+            "seed": 42
+          },
+          "f1_difference_second_minus_first": {
+            "ci_high": 0.051861789234695796,
+            "ci_low": -0.006599677002859072,
+            "clusters": 76,
+            "difference": 0.022537820314912138,
+            "repetitions": 2000,
+            "responses": 152,
+            "seed": 42
+          },
+          "first": "Phi4-14B",
+          "mcnemar": {
+            "discordant": 6,
+            "first_correct_second_wrong": 1,
+            "first_wrong_second_correct": 5,
+            "p_value_two_sided_exact": 0.21875
+          },
+          "second": "DeepSeek-V4-Flash"
+        }
+      },
+      "probe_verdict_agreement_with_shared_model": {
+        "Gemma3-12B": {
+          "agreement_count": 3649,
+          "agreement_rate": 0.9111111111111111,
+          "cohen_kappa": 0.8257659994038956,
+          "labels": [
+            "NO",
+            "NOT_SURE",
+            "YES"
+          ],
+          "n": 4005
+        },
+        "Gemma3-4B": {
+          "agreement_count": 3308,
+          "agreement_rate": 0.8259675405742821,
+          "cohen_kappa": 0.6599423452080666,
+          "labels": [
+            "NO",
+            "NOT_SURE",
+            "YES"
+          ],
+          "n": 4005
+        },
+        "Phi4-14B": {
+          "agreement_count": 3687,
+          "agreement_rate": 0.9205992509363295,
+          "cohen_kappa": 0.842515683327911,
+          "labels": [
+            "NO",
+            "NOT_SURE",
+            "YES"
+          ],
+          "n": 4005
+        }
+      },
+      "response_prediction_agreement_with_shared_model": {
+        "Gemma3-12B": {
+          "agreement_count": 144,
+          "agreement_rate": 0.9473684210526315,
+          "cohen_kappa": 0.894736842105263,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 152
+        },
+        "Gemma3-4B": {
+          "agreement_count": 124,
+          "agreement_rate": 0.8157894736842105,
+          "cohen_kappa": 0.6353666895133653,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 152
+        },
+        "Phi4-14B": {
+          "agreement_count": 146,
+          "agreement_rate": 0.9605263157894737,
+          "cohen_kappa": 0.9200561009817672,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 152
+        }
+      },
+      "shared_model_verifier": "DeepSeek-V4-Flash"
+    },
+    "HaluEvalQA-3206-afterHuman": {
+      "independent_majority_agreement_with_shared_model": {
+        "agreement_count": 6041,
+        "agreement_rate": 0.9504405286343612,
+        "cohen_kappa": 0.8980623839025996,
+        "labels": [
+          "False",
+          "True"
+        ],
+        "n": 6356
+      },
+      "independent_majority_confusion": {
+        "accuracy": 0.8467589679043424,
+        "f1": 0.8316626339440027,
+        "fn": 800,
+        "fp": 174,
+        "n": 6356,
+        "precision": 0.9325581395348838,
+        "recall": 0.7504678727386151,
+        "tn": 2976,
+        "tp": 2406
+      },
+      "independent_verifiers": [
+        "Gemma3-4B",
+        "Gemma3-12B",
+        "Phi4-14B"
+      ],
+      "model_confusions": {
+        "DeepSeek-V4-Flash": {
+          "accuracy": 0.8629641283826306,
+          "f1": 0.852797025519689,
+          "fn": 683,
+          "fp": 188,
+          "n": 6356,
+          "precision": 0.9306528956104758,
+          "recall": 0.7869619463505927,
+          "tn": 2962,
+          "tp": 2523
+        },
+        "Gemma3-12B": {
+          "accuracy": 0.8366897419760856,
+          "f1": 0.8187216206776109,
+          "fn": 862,
+          "fp": 176,
+          "n": 6356,
+          "precision": 0.9301587301587302,
+          "recall": 0.7311291328758578,
+          "tn": 2974,
+          "tp": 2344
+        },
+        "Gemma3-4B": {
+          "accuracy": 0.7994021397105098,
+          "f1": 0.7672083257257623,
+          "fn": 1105,
+          "fp": 170,
+          "n": 6356,
+          "precision": 0.9251431087626596,
+          "recall": 0.6553337492202121,
+          "tn": 2980,
+          "tp": 2101
+        },
+        "Phi4-14B": {
+          "accuracy": 0.8613908118313405,
+          "f1": 0.8520570948782537,
+          "fn": 669,
+          "fp": 212,
+          "n": 6356,
+          "precision": 0.9228810476536923,
+          "recall": 0.7913287585776668,
+          "tn": 2938,
+          "tp": 2537
+        }
+      },
+      "n_factoids": 10686,
+      "n_probe_verdicts_per_model": 53430,
+      "n_responses": 6356,
+      "paired_comparison_majority_vs_shared": {
+        "accuracy_difference_second_minus_first": {
+          "ci_high": 0.021688224132098026,
+          "ci_low": 0.010996040721182602,
+          "clusters": 3206,
+          "difference": 0.01620516047828824,
+          "repetitions": 2000,
+          "responses": 6356,
+          "seed": 42
+        },
+        "f1_difference_second_minus_first": {
+          "ci_high": 0.027766428506482265,
+          "ci_low": 0.01487397145532221,
+          "clusters": 3206,
+          "difference": 0.021134391575686196,
+          "repetitions": 2000,
+          "responses": 6356,
+          "seed": 42
+        },
+        "first": "Independent-local-majority",
+        "mcnemar": {
+          "discordant": 315,
+          "first_correct_second_wrong": 106,
+          "first_wrong_second_correct": 209,
+          "p_value_two_sided_exact": 6.72332633888516e-09
+        },
+        "second": "DeepSeek-V4-Flash"
+      },
+      "paired_comparisons_independent_vs_shared": {
+        "Gemma3-12B": {
+          "accuracy_difference_second_minus_first": {
+            "ci_high": 0.03253770593333731,
+            "ci_low": 0.02041841583696896,
+            "clusters": 3206,
+            "difference": 0.026274386406545003,
+            "repetitions": 2000,
+            "responses": 6356,
+            "seed": 42
+          },
+          "f1_difference_second_minus_first": {
+            "ci_high": 0.041695260122239564,
+            "ci_low": 0.026974013087182593,
+            "clusters": 3206,
+            "difference": 0.03407540484207805,
+            "repetitions": 2000,
+            "responses": 6356,
+            "seed": 42
+          },
+          "first": "Gemma3-12B",
+          "mcnemar": {
+            "discordant": 419,
+            "first_correct_second_wrong": 126,
+            "first_wrong_second_correct": 293,
+            "p_value_two_sided_exact": 2.0262136254271236e-16
+          },
+          "second": "DeepSeek-V4-Flash"
+        },
+        "Gemma3-4B": {
+          "accuracy_difference_second_minus_first": {
+            "ci_high": 0.07139515413627358,
+            "ci_low": 0.055659065851012796,
+            "clusters": 3206,
+            "difference": 0.06356198867212082,
+            "repetitions": 2000,
+            "responses": 6356,
+            "seed": 42
+          },
+          "f1_difference_second_minus_first": {
+            "ci_high": 0.09562061107385081,
+            "ci_low": 0.07539547900475049,
+            "clusters": 3206,
+            "difference": 0.08558869979392669,
+            "repetitions": 2000,
+            "responses": 6356,
+            "seed": 42
+          },
+          "first": "Gemma3-4B",
+          "mcnemar": {
+            "discordant": 698,
+            "first_correct_second_wrong": 147,
+            "first_wrong_second_correct": 551,
+            "p_value_two_sided_exact": 8.420525744880059e-56
+          },
+          "second": "DeepSeek-V4-Flash"
+        },
+        "Phi4-14B": {
+          "accuracy_difference_second_minus_first": {
+            "ci_high": 0.006768482486704791,
+            "ci_low": -0.0031522001934236013,
+            "clusters": 3206,
+            "difference": 0.001573316551290116,
+            "repetitions": 2000,
+            "responses": 6356,
+            "seed": 42
+          },
+          "f1_difference_second_minus_first": {
+            "ci_high": 0.006599975742946046,
+            "ci_low": -0.004792509722184449,
+            "clusters": 3206,
+            "difference": 0.0007399306414352935,
+            "repetitions": 2000,
+            "responses": 6356,
+            "seed": 42
+          },
+          "first": "Phi4-14B",
+          "mcnemar": {
+            "discordant": 274,
+            "first_correct_second_wrong": 132,
+            "first_wrong_second_correct": 142,
+            "p_value_two_sided_exact": 0.5867219053297228
+          },
+          "second": "DeepSeek-V4-Flash"
+        }
+      },
+      "probe_verdict_agreement_with_shared_model": {
+        "Gemma3-12B": {
+          "agreement_count": 42825,
+          "agreement_rate": 0.8015160022459292,
+          "cohen_kappa": 0.6986735007163583,
+          "labels": [
+            "NO",
+            "NOT_SURE",
+            "YES"
+          ],
+          "n": 53430
+        },
+        "Gemma3-4B": {
+          "agreement_count": 40074,
+          "agreement_rate": 0.7500280741156654,
+          "cohen_kappa": 0.5948637915120961,
+          "labels": [
+            "NO",
+            "NOT_SURE",
+            "YES"
+          ],
+          "n": 53430
+        },
+        "Phi4-14B": {
+          "agreement_count": 44683,
+          "agreement_rate": 0.8362904735167509,
+          "cohen_kappa": 0.7356339040453052,
+          "labels": [
+            "NO",
+            "NOT_SURE",
+            "YES"
+          ],
+          "n": 53430
+        }
+      },
+      "response_prediction_agreement_with_shared_model": {
+        "Gemma3-12B": {
+          "agreement_count": 5937,
+          "agreement_rate": 0.934078036500944,
+          "cohen_kappa": 0.8640188031573064,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 6356
+        },
+        "Gemma3-4B": {
+          "agreement_count": 5658,
+          "agreement_rate": 0.8901825047199496,
+          "cohen_kappa": 0.770750554328881,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 6356
+        },
+        "Phi4-14B": {
+          "agreement_count": 6082,
+          "agreement_rate": 0.9568911264946507,
+          "cohen_kappa": 0.9120373770334813,
+          "labels": [
+            "False",
+            "True"
+          ],
+          "n": 6356
+        }
+      },
+      "shared_model_verifier": "DeepSeek-V4-Flash"
+    }
+  },
+  "scope_limitation": "This analysis changes verifier identity while keeping the DeepSeek-generated factoid decomposition and mutations frozen. It tests shared-verifier sensitivity but is not an independent probe-generation experiment."
+}

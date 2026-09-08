@@ -1,0 +1,29 @@
+{
+  "builder": "build_asqa_top5.py",
+  "source": {
+    "mode": "huggingface_dataset",
+    "dataset_id": "Self-GRIT/asqa_eval",
+    "revision": "3900e8bc34198ac2783660c37902d40a185599bc",
+    "repository_split": "valid",
+    "loaded_split": "validation"
+  },
+  "construction": {
+    "top_k": 5,
+    "document_order": "source retrieval order",
+    "context_expression": "\\n\\n.join(item['docs'][:5][*]['text'])",
+    "standard_answer_expression": "item['annotations'][0]['long_answer']",
+    "output_id_expression": "zero-based source row index",
+    "sampling": "none"
+  },
+  "record_count": 948,
+  "files": {
+    "data": {
+      "path": "provenance/asqa/input_top5_raw.json",
+      "sha256": "76ff5897437fcbbbddf5fb8d38a393ea48cc59500b525d28c9b22b197acaf75b"
+    },
+    "provenance": {
+      "path": "provenance/asqa/input_top5_provenance.json",
+      "sha256": "834d67482b3e0412fa69bdd5f9505757e0fae1d434c2a680531780075a545253"
+    }
+  }
+}

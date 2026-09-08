@@ -1,0 +1,526 @@
+{
+  "by_factoid_type": {
+    "Comparative / Superlative": {
+      "final": {
+        "accuracy": 1.0,
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tn": 10,
+        "tp": 10
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.8,
+        "response_escalation_rate": 0.8,
+        "routed_factoids": 16,
+        "routed_responses": 16,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.85,
+        "f1": 0.8421052631578948,
+        "fn": 2,
+        "fp": 1,
+        "n": 20,
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "tn": 9,
+        "tp": 8
+      },
+      "transitions": {
+        "error_conditional_rescue": 1.0,
+        "error_conditional_rescue_rate": 1.0,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 3,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.15,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 3,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 16,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 16
+        },
+        "rescue_rate_all_responses": 0.15,
+        "rescue_rate_among_routed": 0.1875,
+        "rescue_rate_response": 0.1875,
+        "rescued": 3,
+        "routed_responses": 16,
+        "routed_stage1_wrong": 3,
+        "unchanged_correct": 17,
+        "unchanged_wrong": 0,
+        "undefined_rates": []
+      }
+    },
+    "Entity / Alias / Lexical Relation": {
+      "final": {
+        "accuracy": 0.9,
+        "f1": 0.888888888888889,
+        "fn": 2,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 0.8,
+        "tn": 10,
+        "tp": 8
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.5,
+        "response_escalation_rate": 0.5,
+        "routed_factoids": 10,
+        "routed_responses": 10,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.85,
+        "f1": 0.8421052631578948,
+        "fn": 2,
+        "fp": 1,
+        "n": 20,
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "tn": 9,
+        "tp": 8
+      },
+      "transitions": {
+        "error_conditional_rescue": 1.0,
+        "error_conditional_rescue_rate": 1.0,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 1,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.05,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 1,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 10,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 10
+        },
+        "rescue_rate_all_responses": 0.05,
+        "rescue_rate_among_routed": 0.1,
+        "rescue_rate_response": 0.1,
+        "rescued": 1,
+        "routed_responses": 10,
+        "routed_stage1_wrong": 1,
+        "unchanged_correct": 17,
+        "unchanged_wrong": 2,
+        "undefined_rates": []
+      }
+    },
+    "Multi-entity / Multi-hop": {
+      "final": {
+        "accuracy": 1.0,
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tn": 10,
+        "tp": 10
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.7,
+        "response_escalation_rate": 0.7,
+        "routed_factoids": 14,
+        "routed_responses": 14,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.7,
+        "f1": 0.625,
+        "fn": 5,
+        "fp": 1,
+        "n": 20,
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "tn": 9,
+        "tp": 5
+      },
+      "transitions": {
+        "error_conditional_rescue": 1.0,
+        "error_conditional_rescue_rate": 1.0,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 6,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.3,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 6,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 14,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 14
+        },
+        "rescue_rate_all_responses": 0.3,
+        "rescue_rate_among_routed": 0.42857142857142855,
+        "rescue_rate_response": 0.42857142857142855,
+        "rescued": 6,
+        "routed_responses": 14,
+        "routed_stage1_wrong": 6,
+        "unchanged_correct": 14,
+        "unchanged_wrong": 0,
+        "undefined_rates": []
+      }
+    },
+    "Negation / Exception": {
+      "final": {
+        "accuracy": 1.0,
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tn": 10,
+        "tp": 10
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.65,
+        "response_escalation_rate": 0.65,
+        "routed_factoids": 13,
+        "routed_responses": 13,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.75,
+        "f1": 0.7826086956521738,
+        "fn": 1,
+        "fp": 4,
+        "n": 20,
+        "precision": 0.6923076923076923,
+        "recall": 0.9,
+        "tn": 6,
+        "tp": 9
+      },
+      "transitions": {
+        "error_conditional_rescue": 1.0,
+        "error_conditional_rescue_rate": 1.0,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 5,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.25,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 5,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 13,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 13
+        },
+        "rescue_rate_all_responses": 0.25,
+        "rescue_rate_among_routed": 0.38461538461538464,
+        "rescue_rate_response": 0.38461538461538464,
+        "rescued": 5,
+        "routed_responses": 13,
+        "routed_stage1_wrong": 5,
+        "unchanged_correct": 15,
+        "unchanged_wrong": 0,
+        "undefined_rates": []
+      }
+    },
+    "Numerical / Computation": {
+      "final": {
+        "accuracy": 0.9,
+        "f1": 0.888888888888889,
+        "fn": 2,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 0.8,
+        "tn": 10,
+        "tp": 8
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.55,
+        "response_escalation_rate": 0.55,
+        "routed_factoids": 11,
+        "routed_responses": 11,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.7,
+        "f1": 0.625,
+        "fn": 5,
+        "fp": 1,
+        "n": 20,
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "tn": 9,
+        "tp": 5
+      },
+      "transitions": {
+        "error_conditional_rescue": 1.0,
+        "error_conditional_rescue_rate": 1.0,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 4,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.2,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 4,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 11,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 11
+        },
+        "rescue_rate_all_responses": 0.2,
+        "rescue_rate_among_routed": 0.36363636363636365,
+        "rescue_rate_response": 0.36363636363636365,
+        "rescued": 4,
+        "routed_responses": 11,
+        "routed_stage1_wrong": 4,
+        "unchanged_correct": 14,
+        "unchanged_wrong": 2,
+        "undefined_rates": []
+      }
+    },
+    "Quantifier / Boundary": {
+      "final": {
+        "accuracy": 1.0,
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tn": 10,
+        "tp": 10
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.75,
+        "response_escalation_rate": 0.75,
+        "routed_factoids": 15,
+        "routed_responses": 15,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.8,
+        "f1": 0.7499999999999999,
+        "fn": 4,
+        "fp": 0,
+        "n": 20,
+        "precision": 1.0,
+        "recall": 0.6,
+        "tn": 10,
+        "tp": 6
+      },
+      "transitions": {
+        "error_conditional_rescue": 1.0,
+        "error_conditional_rescue_rate": 1.0,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 4,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.2,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 4,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 15,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 15
+        },
+        "rescue_rate_all_responses": 0.2,
+        "rescue_rate_among_routed": 0.26666666666666666,
+        "rescue_rate_response": 0.26666666666666666,
+        "rescued": 4,
+        "routed_responses": 15,
+        "routed_stage1_wrong": 4,
+        "unchanged_correct": 16,
+        "unchanged_wrong": 0,
+        "undefined_rates": []
+      }
+    },
+    "Time / Sequence": {
+      "final": {
+        "accuracy": 0.85,
+        "f1": 0.8421052631578948,
+        "fn": 2,
+        "fp": 1,
+        "n": 20,
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "tn": 9,
+        "tp": 8
+      },
+      "routing": {
+        "factoid_escalation_rate": 0.55,
+        "response_escalation_rate": 0.55,
+        "routed_factoids": 11,
+        "routed_responses": 11,
+        "total_factoids": 20,
+        "total_responses": 20
+      },
+      "stage1": {
+        "accuracy": 0.7,
+        "f1": 0.625,
+        "fn": 5,
+        "fp": 1,
+        "n": 20,
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "tn": 9,
+        "tp": 5
+      },
+      "transitions": {
+        "error_conditional_rescue": 0.6,
+        "error_conditional_rescue_rate": 0.6,
+        "harm_rate_all_responses": 0.0,
+        "harm_rate_among_routed": 0.0,
+        "harm_rate_response": 0.0,
+        "harmed": 0,
+        "n": 20,
+        "net_correct_gain": 3,
+        "overall_harm_rate": 0.0,
+        "overall_rescue_rate": 0.15,
+        "rate_denominators": {
+          "error_conditional_rescue_rate": 5,
+          "harm_rate_all_responses": 20,
+          "harm_rate_response": 11,
+          "rescue_rate_all_responses": 20,
+          "rescue_rate_response": 11
+        },
+        "rescue_rate_all_responses": 0.15,
+        "rescue_rate_among_routed": 0.2727272727272727,
+        "rescue_rate_response": 0.2727272727272727,
+        "rescued": 3,
+        "routed_responses": 11,
+        "routed_stage1_wrong": 5,
+        "unchanged_correct": 14,
+        "unchanged_wrong": 3,
+        "undefined_rates": []
+      }
+    }
+  },
+  "final": {
+    "accuracy": 0.95,
+    "f1": 0.9481481481481482,
+    "fn": 6,
+    "fp": 1,
+    "n": 140,
+    "precision": 0.9846153846153847,
+    "recall": 0.9142857142857143,
+    "tn": 69,
+    "tp": 64
+  },
+  "preparation_coverage": {
+    "analyzed_factoids": 140,
+    "analyzed_responses": 140,
+    "excluded_zero_probe_responses": [],
+    "source_factoids": 140,
+    "source_responses": 140,
+    "unresolved_decomposition_rate": 0.0,
+    "unresolved_decompositions": 0,
+    "unresolved_mutation_rate": 0.0,
+    "unresolved_mutations": 0
+  },
+  "resources": {
+    "stage1_verify:ollama": {
+      "cache_hits": 14,
+      "executed_calls": 686,
+      "input_tokens": 497090,
+      "latency_seconds": 260.47903079981916,
+      "ollama_generation_duration_seconds": 156.29737198799984,
+      "ollama_load_duration_seconds": 1.3976378000000016,
+      "ollama_prompt_eval_duration_seconds": 81.59166599399988,
+      "ollama_total_duration_seconds": 248.52070689999994,
+      "output_tokens": 21367,
+      "policy_calls": 700,
+      "total_tokens": 518457
+    },
+    "stage2_verify:openai_compatible": {
+      "cache_hits": 10,
+      "executed_calls": 440,
+      "input_tokens": 312647,
+      "latency_seconds": 614.849802697543,
+      "ollama_generation_duration_seconds": 0.0,
+      "ollama_load_duration_seconds": 0.0,
+      "ollama_prompt_eval_duration_seconds": 0.0,
+      "ollama_total_duration_seconds": 0.0,
+      "output_tokens": 12942,
+      "policy_calls": 450,
+      "total_tokens": 325589
+    }
+  },
+  "routing": {
+    "factoid_escalation_rate": 0.6428571428571429,
+    "response_escalation_rate": 0.6428571428571429,
+    "routed_factoids": 90,
+    "routed_responses": 90,
+    "total_factoids": 140,
+    "total_responses": 140
+  },
+  "routing_latency": {
+    "factoids": 140,
+    "mean_seconds_per_factoid": 1.9305003141718252e-05,
+    "total_seconds": 0.002702700439840555
+  },
+  "stage1": {
+    "accuracy": 0.7642857142857142,
+    "f1": 0.736,
+    "fn": 24,
+    "fp": 9,
+    "n": 140,
+    "precision": 0.8363636363636363,
+    "recall": 0.6571428571428571,
+    "tn": 61,
+    "tp": 46
+  },
+  "transitions": {
+    "error_conditional_rescue": 0.9285714285714286,
+    "error_conditional_rescue_rate": 0.9285714285714286,
+    "harm_rate_all_responses": 0.0,
+    "harm_rate_among_routed": 0.0,
+    "harm_rate_response": 0.0,
+    "harmed": 0,
+    "n": 140,
+    "net_correct_gain": 26,
+    "overall_harm_rate": 0.0,
+    "overall_rescue_rate": 0.18571428571428572,
+    "rate_denominators": {
+      "error_conditional_rescue_rate": 28,
+      "harm_rate_all_responses": 140,
+      "harm_rate_response": 90,
+      "rescue_rate_all_responses": 140,
+      "rescue_rate_response": 90
+    },
+    "rescue_rate_all_responses": 0.18571428571428572,
+    "rescue_rate_among_routed": 0.28888888888888886,
+    "rescue_rate_response": 0.28888888888888886,
+    "rescued": 26,
+    "routed_responses": 90,
+    "routed_stage1_wrong": 28,
+    "unchanged_correct": 107,
+    "unchanged_wrong": 7,
+    "undefined_rates": []
+  }
+}

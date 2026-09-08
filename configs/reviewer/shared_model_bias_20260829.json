@@ -1,0 +1,58 @@
+{
+  "output_path": "artifacts/reviewer/shared_model_bias_sensitivity_20260829.json",
+  "csv_path": "artifacts/reviewer/shared_model_bias_sensitivity_20260829.csv",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 42,
+  "datasets": [
+    {
+      "name": "ASQA-top5-76",
+      "models": [
+        {
+          "label": "DeepSeek-V4-Flash",
+          "shared_model": true,
+          "run_directory": "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash/primary"
+        },
+        {
+          "label": "Gemma3-4B",
+          "shared_model": false,
+          "run_directory": "artifacts/runs/rq1/asqa_top5_76/gemma3_4b/primary"
+        },
+        {
+          "label": "Gemma3-12B",
+          "shared_model": false,
+          "run_directory": "artifacts/runs/rq1/asqa_top5_76/gemma3_12b/primary"
+        },
+        {
+          "label": "Phi4-14B",
+          "shared_model": false,
+          "run_directory": "artifacts/runs/rq1/asqa_top5_76/phi4_14b/primary"
+        }
+      ]
+    },
+    {
+      "name": "HaluEvalQA-3206-afterHuman",
+      "models": [
+        {
+          "label": "DeepSeek-V4-Flash",
+          "shared_model": true,
+          "run_directory": "artifacts/runs/rq1/haluevalqa_3206/deepseek_v4_flash/primary"
+        },
+        {
+          "label": "Gemma3-4B",
+          "shared_model": false,
+          "run_directory": "artifacts/runs/rq1/haluevalqa_3206/gemma3_4b/primary"
+        },
+        {
+          "label": "Gemma3-12B",
+          "shared_model": false,
+          "run_directory": "artifacts/runs/rq1/haluevalqa_3206/gemma3_12b/primary"
+        },
+        {
+          "label": "Phi4-14B",
+          "shared_model": false,
+          "run_directory": "artifacts/runs/rq1/haluevalqa_3206/phi4_14b/primary"
+        }
+      ]
+    }
+  ]
+}

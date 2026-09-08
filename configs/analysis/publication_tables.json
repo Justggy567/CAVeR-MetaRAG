@@ -1,0 +1,9 @@
+{
+  "output_directory": "artifacts/publication_tables",
+  "rq1_report": "artifacts/analysis/rq1_all_models.json",
+  "rq2_reports": [
+    {"dataset": "ASQA-top5-76", "path": "artifacts/analysis/rq2_asqa_top5_76.json"},
+    {"dataset": "HaluEvalQA-3206-afterHuman", "path": "artifacts/analysis/rq2_haluevalqa_3206.json"}
+  ],
+  "rq3_report": "artifacts/analysis/rq3_main700.json"
+}

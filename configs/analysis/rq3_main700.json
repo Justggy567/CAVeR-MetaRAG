@@ -1,0 +1,7 @@
+{
+  "run_directory": "artifacts/runs/rq3/main700/structure_aware/primary",
+  "output_path": "artifacts/analysis/rq3_main700.json",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 42,
+  "include_factoid_rows": true
+}

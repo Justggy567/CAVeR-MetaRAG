@@ -1,0 +1,58 @@
+{
+  "output_directory": "artifacts/reviewer/hosted_repeats_20260829",
+  "analysis_config_path": "configs/reviewer/hosted_repeats_analysis_20260829.json",
+  "repeats": 3,
+  "sample_seed": 20260829,
+  "threshold": 0.5,
+  "stage1": {
+    "backend": "openai_compatible",
+    "model_id": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 128,
+    "seed": null,
+    "thinking_mode": "disabled",
+    "timeout_seconds": 120,
+    "max_retries": 4
+  },
+  "pricing": {
+    "currency": "CNY",
+    "price_snapshot_date": "2026-08-29",
+    "time_band": "peak",
+    "models": {
+      "deepseek-v4-flash": {
+        "cached_input_per_million": 0.1,
+        "uncached_input_per_million": 3,
+        "output_per_million": 9
+      }
+    }
+  },
+  "run_pricing": {
+    "deepseek-v4-flash": {
+      "cached_input_per_million": 0.1,
+      "uncached_input_per_million": 3,
+      "output_per_million": 9
+    }
+  },
+  "datasets": [
+    {
+      "name": "ASQA-top5-76",
+      "slug": "asqa_top5_76",
+      "source_prepared_path": "artifacts/prepared/asqa_top5_76.probes.jsonl",
+      "reference_calls_path": "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash/primary/calls.jsonl",
+      "sample_mode": "all",
+      "required_cluster_size": 2
+    },
+    {
+      "name": "HaluEvalQA-3206-afterHuman",
+      "slug": "haluevalqa_3206",
+      "source_prepared_path": "artifacts/prepared/haluevalqa_3206.probes.jsonl",
+      "reference_calls_path": "artifacts/runs/rq1/haluevalqa_3206/deepseek_v4_flash/primary/calls.jsonl",
+      "sample_mode": "question_sample",
+      "question_count": 200,
+      "required_cluster_size": 2
+    }
+  ]
+}

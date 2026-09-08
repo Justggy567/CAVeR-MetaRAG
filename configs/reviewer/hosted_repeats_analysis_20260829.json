@@ -1,0 +1,6 @@
+{
+  "package_manifest": "artifacts/reviewer/hosted_repeats_20260829/package_manifest.json",
+  "runs_root": "artifacts/reviewer/hosted_repeats_20260829/runs",
+  "output_path": "artifacts/reviewer/hosted_repeatability_20260829.json",
+  "csv_path": "artifacts/reviewer/hosted_repeatability_20260829.csv"
+}

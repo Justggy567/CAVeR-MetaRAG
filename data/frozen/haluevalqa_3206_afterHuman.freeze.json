@@ -1,0 +1,39 @@
+{
+  "dataset_name": "HaluEvalQA-3206-afterHuman",
+  "status": "frozen",
+  "metadata_status": "derived_post_hoc_from_verified_provenance",
+  "canonical_path": "data/frozen/haluevalqa_3206_afterHuman.json",
+  "sha256": "52b474d61f76f72b267a8a88985cdb638893a401fd0b7c62fdb5db697aa4d699",
+  "bytes": 2172598,
+  "records": 3206,
+  "evaluated_responses_if_both_roles": 6412,
+  "unique_ids": 3206,
+  "required_fields": [
+    "id",
+    "question",
+    "context",
+    "right_answer",
+    "hallucinated_answer"
+  ],
+  "required_fields_complete": true,
+  "machine_clean_records": 3557,
+  "human_review_counts": {
+    "Keep": 3195,
+    "Modified": 11,
+    "Deleted": 351
+  },
+  "machine_run_id": "haluevalqa_full_10000_original_cleaning",
+  "machine_pipeline_version": "4.2.0",
+  "machine_model": "deepseek-v4-flash",
+  "machine_thinking_mode": "disabled",
+  "raw_input_records": 10000,
+  "raw_input_sha256": "7df3d7c9e5402df396614afe5f7a47657213ac59ac2c2c6631535050c7cc16ee",
+  "provenance": {
+    "audit": "release/RQ1&2_data_cleaning/CLEANING_AUDIT.json",
+    "run_manifest": "release/RQ1&2_data_cleaning/provenance/haluevalqa/run_manifest.json",
+    "machine_clean": "release/RQ1&2_data_cleaning/provenance/haluevalqa/machine_clean_3557.json",
+    "human_review_log": "release/RQ1&2_data_cleaning/provenance/haluevalqa/human_review_log.csv"
+  },
+  "verified_at_utc": "2026-09-02T00:00:00+00:00",
+  "notes": "This metadata file was added during packaging because the runtime frozen directory contained the verified dataset bytes but no companion freeze manifest. The dataset itself was not modified or re-frozen."
+}

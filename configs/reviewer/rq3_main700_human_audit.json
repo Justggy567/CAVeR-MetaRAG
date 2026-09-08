@@ -1,0 +1,8 @@
+{
+  "annotator_a": "data/rq3/annotations/main700/annotator_A.csv",
+  "annotator_b": "data/rq3/annotations/main700/annotator_B.csv",
+  "adjudication": "data/rq3/annotations/main700/adjudication.csv",
+  "frozen_dataset": "data/frozen/rq3_main700_final.jsonl",
+  "output_path": "artifacts/audits/rq3_main700_human_audit.json",
+  "csv_path": "artifacts/audits/rq3_main700_human_agreement.csv"
+}

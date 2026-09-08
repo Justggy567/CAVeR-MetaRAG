@@ -1,0 +1,33 @@
+{
+  "schema_version": "rq3-main700-replication140-audit-package-v2",
+  "package_version": "2026-09-04",
+  "encoding": "UTF-8",
+  "canonical_datasets": {
+    "main700": "data/main700/rq3_main700_final.jsonl",
+    "replication140": "data/replication140/rq3_replication140_final.jsonl"
+  },
+  "canonical_protocols": {
+    "taxonomy": "protocols/rq3_taxonomy_v2.md",
+    "annotation_guide": "protocols/ANNOTATION_GUIDE.md"
+  },
+  "reports": {
+    "replication_construction": "docs/REPLICATION140_CONSTRUCTION.md",
+    "machine_verification": "reports/verification_results.json"
+  },
+  "verification": {
+    "command": "python scripts/verify_package.py",
+    "hash_manifest": "SHA256SUMS.txt"
+  },
+  "authority_order": [
+    "Frozen canonical JSONL for experiment fields",
+    "A/B/C files for annotation and adjudication evidence",
+    "Per-record provenance audit only for provenance fields",
+    "Narrative files only for documented process context"
+  ],
+  "audit_warnings": [
+    "Development-stage source tables and pre-rewrite snapshots are intentionally omitted from this final-only package.",
+    "The packaged legacy-B CSV is the UTF-8 normalized audit copy aligned by identifier.",
+    "Question relevance is descriptive rather than a hard inclusion criterion in the current Main-700 design.",
+    "The paper-reported development-stage count of 176 atomicity rewrites is historical narrative; the final-only package verifies the resulting 700/700 atomic records but intentionally omits pre-rewrite snapshots."
+  ]
+}

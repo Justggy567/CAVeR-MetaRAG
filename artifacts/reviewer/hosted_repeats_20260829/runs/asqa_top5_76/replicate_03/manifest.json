@@ -1,0 +1,145 @@
+{
+  "completed_factoids": 801,
+  "completed_responses": 152,
+  "config_hash": "0eca4fb255ca5c33ca521258b6edce8362680e5ede9dc726037799c1b7f02d0c",
+  "created_at_utc": "2026-08-30T14:42:49.455806+00:00",
+  "environment": {
+    "concurrency": 1,
+    "execution": "sequential",
+    "repeat_design": "fresh application cache per replicate"
+  },
+  "excluded_zero_probe_responses": [],
+  "expected_responses": 152,
+  "git_commit": null,
+  "method_spec_sha256": "1f1d3cd72725e29c224fd3f54bf76a589497e042b2d81fa21f73c97cfb1edd56",
+  "output_sha256": {
+    "calls": "e5378ae80250bdfa21d280e41df75bf30c07307328a3c485781113aa12db5dbf",
+    "factoids": "e4bcb67eb92bc05c4ebd3829347e35e6b1e4009008d29f9c5b4d90aebffd6305",
+    "responses": "ffba4e7a7876dff271e525c4d7c464a0ec688b0621db37c8d530d7aa25b85555",
+    "summary": "2b69b06f596d73cc5bf377c220f5a29e09c6a4bb3c231ad64062e253f932bdb2",
+    "warmup_calls": null
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "prepared_path": "artifacts/reviewer/hosted_repeats_20260829/prepared/asqa_top5_76.hosted_repeat.probes.jsonl",
+  "prepared_sha256": "c89fbbfb0df9a376a89f61db747cc2b13a826e8c3ef9e918cd22b5ff0d36ef69",
+  "pricing": {
+    "deepseek-v4-flash": {
+      "cached_input_per_million": 0.1,
+      "output_per_million": 9,
+      "uncached_input_per_million": 3
+    }
+  },
+  "prompt_bundle": {
+    "bundle_hash": "bf91e48cc31a23b82815c8fed18870e75cff6f8589656c5f1b7ea445a9fe3766",
+    "hashes": {
+      "antonym_system": "5ecce7895c1dd5d6dc719add3ac2730b9771629e5ec96d935b89d61a33d42f08",
+      "decomposition_system": "6d1ca0a5a13535a0af66783fda56415cfb4beec82bab6ea1e67d757d7b5e2813",
+      "decomposition_user_template": "f12213b8587313de0935d367a0c1ea69e9d10bfd57b9de63b2f54f665c7b5d89",
+      "mutation_user_template": "3ba6a2380e2cd9172549c08930e92674756587e98ceb5aeebe6c4ec48fcc802b",
+      "synonym_system": "5e380ef5c2e7929994a8d393cd3cce24896b41526522813019a959b78b8c0453",
+      "verifier_system": "4a7084bce0d174f60d022f187aa1dbb347951a42a91d0dd6e8d053cceafd6b67",
+      "verifier_user_template": "a1d30dbe46c009ce9737060cf768e29a960de85467297a0e50ff9541ee8a3c08"
+    },
+    "version": "2026-08-22.v1"
+  },
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "reproducibility_protocol": {
+    "generation_output_validation": {
+      "acceptance_rule": "exactly two non-empty lines after stripping a leading bullet or numeric list marker",
+      "analysis_denominator": "only successfully generated factoids enter probe verification; unresolved count, rate, IDs, and zero-probe responses are reported separately",
+      "attempt_logging": "every API response is logged before acceptance/rejection with raw content, hash, token usage, latency, attempt index, and validation error",
+      "decomposition_acceptance_rule": "non-empty JSON array containing only non-empty factoid strings",
+      "decomposition_exhaustion_policy": "write one unresolved_decomposition response record and continue; the response is retained for audit but excluded from verification",
+      "decomposition_format_max_attempts": 3,
+      "decomposition_retry_prompt": "identical frozen system and user prompts; every returned response is logged before parsing",
+      "exhaustion_policy": "after all format attempts fail, write one unresolved_mutation record and continue with the next factoid; never synthesize or duplicate a missing mutation",
+      "format_max_attempts": 3,
+      "prompt_on_retry": "identical frozen system and user prompts; no repair prompt and no manual completion",
+      "required_mutations_per_side": 2,
+      "retry_scope": "retry only the synonym or antonym side whose returned text fails exact-two parsing"
+    },
+    "latency_protocol": {
+      "clock": "Python time.perf_counter wall-clock",
+      "cold_warm_definition": "One fixed verifier request warms each Ollama model at the start of an incomplete run session. The warm-up is written to warmup_calls.jsonl and excluded from response metrics. Ollama load, prompt-evaluation, generation, total-duration, and client wall-clock fields are retained separately.",
+      "local_keep_alive": "5m",
+      "local_warmup_calls_per_model_session": 1,
+      "local_warmup_in_primary_metrics": false,
+      "policy_replay_note": "RQ2 policy latency is reconstructed as the sum of measured frozen preparation, Stage-1, and selected Stage-2 calls under concurrency=1. It is not a new live wall-clock rerun for each policy.",
+      "remote_api_note": "No synthetic API warm-up is used. Each observed request latency, including retries, is retained.",
+      "remote_api_warmup": false
+    },
+    "primary_execution": {
+      "batching": false,
+      "cache_policy": "persistent exact-request-hash cache; cache hits are flagged and never counted as executed calls",
+      "concurrency": 1,
+      "response_order": "frozen dataset order",
+      "scheduling": "strictly sequential within each run"
+    },
+    "protocol_version": "2026-08-23.v3",
+    "randomness": {
+      "local_seed": 42,
+      "mutation_temperature": 0.2,
+      "remote_seed": null,
+      "statement": "Temperature zero and a seed do not justify a bitwise-deterministic claim for hosted or quantized inference.",
+      "verifier_temperature": 0.0
+    },
+    "resource_accounting": {
+      "api_calls": "reported separately from tokens",
+      "cloud_charge": "computed only after explicit input/output prices are supplied",
+      "cloud_input_tokens": "provider-reported prompt/input tokens",
+      "cloud_output_tokens": "provider-reported completion/output tokens",
+      "energy": "not measured; no energy-efficiency claim is permitted without external power telemetry",
+      "local_gpu_time": "Ollama duration fields, reported separately from wall-clock",
+      "local_tokens": "Ollama prompt_eval_count plus eval_count",
+      "total_tokens": "sum of all input and output tokens; never includes call counts"
+    }
+  },
+  "reproducibility_protocol_sha256": "bff30a8a23290dc40a90d66009f9117ec60c59f27c484b6e14ea3f07074edf5c",
+  "response_aggregation": "max_factoid_score",
+  "routing_policy": "no_escalation",
+  "rq3_taxonomy": {
+    "assignment_principle": "Assign one primary category by the principal reasoning operation required to verify the factoid against context, not by surface lexical cues.",
+    "category_names": {
+      "Cat1": "Entity / Alias / Lexical Relation",
+      "Cat2": "Negation / Exception",
+      "Cat3": "Quantifier / Boundary",
+      "Cat4": "Time / Sequence",
+      "Cat5": "Comparative / Superlative",
+      "Cat6": "Numerical / Computation",
+      "Cat7": "Multi-entity / Multi-hop"
+    },
+    "definitions_en": {
+      "Cat1": "Verification primarily requires identifying an entity, alias, category, membership, attribute, or direct lexical/semantic relation. Pure synonym-based surface variation does not constitute a factual difference.",
+      "Cat2": "Truth primarily depends on proposition polarity, exclusion, exception, permission/prohibition, existence/non-existence, or another explicitly negative or exception-based semantic relation.",
+      "Cat3": "Verification primarily depends on scope, lower or upper bounds, degree of coverage, frequency, or quantification/boundary relations such as all, some, only, at least, and at most.",
+      "Cat4": "Verification primarily depends on dates, years, durations, temporal positions, event order, or temporal relations such as before and after.",
+      "Cat5": "Verification primarily requires establishing a comparative relation, ranking, relative magnitude, or a superlative relation such as highest/lowest or largest/smallest.",
+      "Cat6": "A numerical value, quantity, measurement, proportion, unit, or computation result must itself be the principal factual element, or verification must require an explicit numerical operation such as counting, arithmetic, ratio calculation, or unit conversion. The mere presence of a number is insufficient. Temporal numbers take Time / Sequence priority, boundary quantities take Quantifier / Boundary priority, and comparison-dependent numbers take Comparative / Superlative priority.",
+      "Cat7": "Verification requires combining relations among multiple entities, integrating two or more distinct contextual facts, or following a multi-step relational chain. Multiple entity names alone are insufficient; two or more evidence relations or contextual facts must be combined."
+    },
+    "manifest_sha256": "7f3b4ee6a7c27bbc3640e210f97b54cc860eca81c7163fdac34c774040a72ad9",
+    "source_sha256": "0f38475b49193009c1dcae932b893fcf7d153a275778089a5420f58f665edaf7",
+    "version": "2026-08-22.user-v2"
+  },
+  "run_id": "replicate_03",
+  "scoring_profile": "paper_five_statement_mean",
+  "source_prepared_responses": 152,
+  "stage1": {
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "backend": "openai_compatible",
+    "base_url": "https://api.deepseek.com",
+    "cache_path": "artifacts/reviewer/hosted_repeats_20260829/fresh_caches/asqa_top5_76/replicate_03.jsonl",
+    "max_retries": 4,
+    "max_tokens": 128,
+    "model_id": "deepseek-v4-flash",
+    "seed": null,
+    "temperature": 0,
+    "thinking_mode": "disabled",
+    "timeout_seconds": 120,
+    "top_p": 1
+  },
+  "stage2": null,
+  "status": "complete",
+  "threshold": 0.5,
+  "updated_at_utc": "2026-08-30T15:22:55.433623+00:00"
+}

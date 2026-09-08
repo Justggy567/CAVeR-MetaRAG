@@ -1,0 +1,83 @@
+{
+  "output_path": "artifacts/audits/cloud_cost_peak_20260829.json",
+  "csv_path": "artifacts/audits/cloud_cost_peak_20260829.csv",
+  "pricing": {
+    "currency": "CNY",
+    "price_snapshot_date": "2026-08-29",
+    "time_band": "peak",
+    "source": "user-supplied DeepSeek pricing screenshot; copied to artifacts/audits/pricing_source_deepseek_peak_20260829.png",
+    "models": {
+      "deepseek-v4-flash": {
+        "cached_input_per_million": 0.1,
+        "uncached_input_per_million": 3,
+        "output_per_million": 9
+      }
+    }
+  },
+  "call_ledgers": [
+    {
+      "scope": "Preparation-ASQA",
+      "path": "artifacts/prepared/asqa_top5_76.probes.jsonl.calls.jsonl"
+    },
+    {
+      "scope": "Preparation-HaluEvalQA",
+      "path": "artifacts/prepared/haluevalqa_3206.probes.jsonl.calls.jsonl"
+    },
+    {
+      "scope": "Preparation-RQ3-Main700",
+      "path": "artifacts/prepared/rq3_main700.probes.jsonl.calls.jsonl"
+    },
+    {
+      "scope": "Preparation-RQ3-Replication140",
+      "path": "artifacts/prepared/rq3_replication140.probes.jsonl.calls.jsonl"
+    },
+    {
+      "scope": "RQ1-ASQA-DeepSeek",
+      "path": "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash/primary/calls.jsonl"
+    },
+    {
+      "scope": "RQ1-HaluEvalQA-DeepSeek",
+      "path": "artifacts/runs/rq1/haluevalqa_3206/deepseek_v4_flash/primary/calls.jsonl"
+    },
+    {
+      "scope": "RQ2-ASQA-matrix",
+      "path": "artifacts/runs/rq2/asqa_top5_76/matrix/primary/calls.jsonl"
+    },
+    {
+      "scope": "RQ2-HaluEvalQA-matrix",
+      "path": "artifacts/runs/rq2/haluevalqa_3206/matrix/primary/calls.jsonl"
+    },
+    {
+      "scope": "RQ3-Main700",
+      "path": "artifacts/runs/rq3/main700/structure_aware/primary/calls.jsonl"
+    },
+    {
+      "scope": "RQ3-Replication140",
+      "path": "artifacts/runs/rq3/replication140/structure_aware/primary/calls.jsonl"
+    },
+    {
+      "scope": "Hosted-ASQA-replicate-01",
+      "path": "artifacts/reviewer/hosted_repeats_20260829/runs/asqa_top5_76/replicate_01/calls.jsonl"
+    },
+    {
+      "scope": "Hosted-ASQA-replicate-02",
+      "path": "artifacts/reviewer/hosted_repeats_20260829/runs/asqa_top5_76/replicate_02/calls.jsonl"
+    },
+    {
+      "scope": "Hosted-ASQA-replicate-03",
+      "path": "artifacts/reviewer/hosted_repeats_20260829/runs/asqa_top5_76/replicate_03/calls.jsonl"
+    },
+    {
+      "scope": "Hosted-HaluEvalQA-replicate-01",
+      "path": "artifacts/reviewer/hosted_repeats_20260829/runs/haluevalqa_3206/replicate_01/calls.jsonl"
+    },
+    {
+      "scope": "Hosted-HaluEvalQA-replicate-02",
+      "path": "artifacts/reviewer/hosted_repeats_20260829/runs/haluevalqa_3206/replicate_02/calls.jsonl"
+    },
+    {
+      "scope": "Hosted-HaluEvalQA-replicate-03",
+      "path": "artifacts/reviewer/hosted_repeats_20260829/runs/haluevalqa_3206/replicate_03/calls.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,2558 @@
+{
+  "schema_version": "manuscript-data-pairing-audit-v1",
+  "reference_pdf_hashes": {
+    "main_manuscript_reference_2026-09-04": "7e668e73d07e3953715d6cbd10b342dc8e851e5d2beb61f6fc9a99a9ba956186",
+    "supplement_reference_2026-09-04": "1191425959ae47da566e688366fdc015dca1af0d900adaa78db1eae0fce2d71f"
+  },
+  "pdf_hash_policy": "informational_only; later document revisions are allowed when experimental values are unchanged",
+  "manuscripts": [
+    {
+      "file_name": "CAVeR_MetaRAG_revision_Supplementary Information.pdf",
+      "sha256": "1191425959ae47da566e688366fdc015dca1af0d900adaa78db1eae0fce2d71f",
+      "known_reference_role": "supplement_reference_2026-09-04"
+    },
+    {
+      "file_name": "CAVeR_MetaRAG_revision_reduceTo25.pdf",
+      "sha256": "7e668e73d07e3953715d6cbd10b342dc8e851e5d2beb61f6fc9a99a9ba956186",
+      "known_reference_role": "main_manuscript_reference_2026-09-04"
+    }
+  ],
+  "numeric_status": "PASS",
+  "checks_passed": 354,
+  "checks_total": 354,
+  "failed_claims": [],
+  "checks": [
+    {
+      "claim": "Table 3 ASQA-top5-76/DeepSeek-V4-Flash integer confusion",
+      "status": "PASS",
+      "actual": [
+        75,
+        7,
+        69,
+        1
+      ],
+      "expected": [
+        75,
+        7,
+        69,
+        1
+      ]
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/DeepSeek-V4-Flash accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/DeepSeek-V4-Flash F1",
+      "status": "PASS",
+      "actual_rounded": 0.9494,
+      "expected": 0.9494,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Gemma3-12B integer confusion",
+      "status": "PASS",
+      "actual": [
+        72,
+        4,
+        72,
+        4
+      ],
+      "expected": [
+        72,
+        4,
+        72,
+        4
+      ]
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Gemma3-12B accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Gemma3-12B F1",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Gemma3-4B integer confusion",
+      "status": "PASS",
+      "actual": [
+        59,
+        7,
+        69,
+        17
+      ],
+      "expected": [
+        59,
+        7,
+        69,
+        17
+      ]
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Gemma3-4B accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8421,
+      "expected": 0.8421,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Gemma3-4B F1",
+      "status": "PASS",
+      "actual_rounded": 0.831,
+      "expected": 0.831,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Phi4-14B integer confusion",
+      "status": "PASS",
+      "actual": [
+        76,
+        12,
+        64,
+        0
+      ],
+      "expected": [
+        76,
+        12,
+        64,
+        0
+      ]
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Phi4-14B accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9211,
+      "expected": 0.9211,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 ASQA-top5-76/Phi4-14B F1",
+      "status": "PASS",
+      "actual_rounded": 0.9268,
+      "expected": 0.9268,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash integer confusion",
+      "status": "PASS",
+      "actual": [
+        2523,
+        188,
+        2962,
+        683
+      ],
+      "expected": [
+        2523,
+        188,
+        2962,
+        683
+      ]
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.863,
+      "expected": 0.863,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash F1",
+      "status": "PASS",
+      "actual_rounded": 0.8528,
+      "expected": 0.8528,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Gemma3-12B integer confusion",
+      "status": "PASS",
+      "actual": [
+        2344,
+        176,
+        2974,
+        862
+      ],
+      "expected": [
+        2344,
+        176,
+        2974,
+        862
+      ]
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Gemma3-12B accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8367,
+      "expected": 0.8367,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Gemma3-12B F1",
+      "status": "PASS",
+      "actual_rounded": 0.8187,
+      "expected": 0.8187,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Gemma3-4B integer confusion",
+      "status": "PASS",
+      "actual": [
+        2101,
+        170,
+        2980,
+        1105
+      ],
+      "expected": [
+        2101,
+        170,
+        2980,
+        1105
+      ]
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Gemma3-4B accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.7994,
+      "expected": 0.7994,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Gemma3-4B F1",
+      "status": "PASS",
+      "actual_rounded": 0.7672,
+      "expected": 0.7672,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Phi4-14B integer confusion",
+      "status": "PASS",
+      "actual": [
+        2537,
+        212,
+        2938,
+        669
+      ],
+      "expected": [
+        2537,
+        212,
+        2938,
+        669
+      ]
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Phi4-14B accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8614,
+      "expected": 0.8614,
+      "digits": 4
+    },
+    {
+      "claim": "Table 3 HaluEvalQA-3206-afterHuman/Phi4-14B F1",
+      "status": "PASS",
+      "actual_rounded": 0.8521,
+      "expected": 0.8521,
+      "digits": 4
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/DeepSeek-V4-Flash mean latency",
+      "status": "PASS",
+      "actual_rounded": 33.07,
+      "expected": 33.07,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/DeepSeek-V4-Flash P95 latency",
+      "status": "PASS",
+      "actual_rounded": 69.05,
+      "expected": 69.05,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/DeepSeek-V4-Flash total tokens",
+      "status": "PASS",
+      "actual_rounded": 29727.0,
+      "expected": 29727,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Gemma3-12B mean latency",
+      "status": "PASS",
+      "actual_rounded": 29.5,
+      "expected": 29.5,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Gemma3-12B P95 latency",
+      "status": "PASS",
+      "actual_rounded": 62.28,
+      "expected": 62.28,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Gemma3-12B total tokens",
+      "status": "PASS",
+      "actual_rounded": 30944.0,
+      "expected": 30944,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Gemma3-4B mean latency",
+      "status": "PASS",
+      "actual_rounded": 20.28,
+      "expected": 20.28,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Gemma3-4B P95 latency",
+      "status": "PASS",
+      "actual_rounded": 42.82,
+      "expected": 42.82,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Gemma3-4B total tokens",
+      "status": "PASS",
+      "actual_rounded": 31132.0,
+      "expected": 31132,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Phi4-14B mean latency",
+      "status": "PASS",
+      "actual_rounded": 25.11,
+      "expected": 25.11,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Phi4-14B P95 latency",
+      "status": "PASS",
+      "actual_rounded": 56.16,
+      "expected": 56.16,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 ASQA-top5-76/Phi4-14B total tokens",
+      "status": "PASS",
+      "actual_rounded": 30237.0,
+      "expected": 30237,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash mean latency",
+      "status": "PASS",
+      "actual_rounded": 10.96,
+      "expected": 10.96,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash P95 latency",
+      "status": "PASS",
+      "actual_rounded": 21.2,
+      "expected": 21.2,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash total tokens",
+      "status": "PASS",
+      "actual_rounded": 4696.0,
+      "expected": 4696,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Gemma3-12B mean latency",
+      "status": "PASS",
+      "actual_rounded": 8.68,
+      "expected": 8.68,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Gemma3-12B P95 latency",
+      "status": "PASS",
+      "actual_rounded": 16.92,
+      "expected": 16.92,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Gemma3-12B total tokens",
+      "status": "PASS",
+      "actual_rounded": 4935.0,
+      "expected": 4935,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Gemma3-4B mean latency",
+      "status": "PASS",
+      "actual_rounded": 6.4,
+      "expected": 6.4,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Gemma3-4B P95 latency",
+      "status": "PASS",
+      "actual_rounded": 12.36,
+      "expected": 12.36,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Gemma3-4B total tokens",
+      "status": "PASS",
+      "actual_rounded": 4951.0,
+      "expected": 4951,
+      "digits": 0
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Phi4-14B mean latency",
+      "status": "PASS",
+      "actual_rounded": 8.42,
+      "expected": 8.42,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Phi4-14B P95 latency",
+      "status": "PASS",
+      "actual_rounded": 16.25,
+      "expected": 16.25,
+      "digits": 2
+    },
+    {
+      "claim": "Table 4 HaluEvalQA-3206-afterHuman/Phi4-14B total tokens",
+      "status": "PASS",
+      "actual_rounded": 4825.0,
+      "expected": 4825,
+      "digits": 0
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/no_escalation accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8421,
+      "expected": 0.8421,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/no_escalation F1",
+      "status": "PASS",
+      "actual_rounded": 0.831,
+      "expected": 0.831,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/no_escalation route",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/anomaly_count accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/anomaly_count F1",
+      "status": "PASS",
+      "actual_rounded": 0.9481,
+      "expected": 0.9481,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/anomaly_count route",
+      "status": "PASS",
+      "actual_rounded": 0.2222,
+      "expected": 0.2222,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/learned_router_matched_rate accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9539,
+      "expected": 0.9539,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/learned_router_matched_rate F1",
+      "status": "PASS",
+      "actual_rounded": 0.9548,
+      "expected": 0.9548,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/learned_router_matched_rate route",
+      "status": "PASS",
+      "actual_rounded": 0.3945,
+      "expected": 0.3945,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/structure_aware accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/structure_aware F1",
+      "status": "PASS",
+      "actual_rounded": 0.9487,
+      "expected": 0.9487,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/structure_aware route",
+      "status": "PASS",
+      "actual_rounded": 0.3945,
+      "expected": 0.3945,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/strict accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/strict F1",
+      "status": "PASS",
+      "actual_rounded": 0.9487,
+      "expected": 0.9487,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/strict route",
+      "status": "PASS",
+      "actual_rounded": 0.4345,
+      "expected": 0.4345,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/strong_only accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/strong_only F1",
+      "status": "PASS",
+      "actual_rounded": 0.9494,
+      "expected": 0.9494,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 ASQA-top5-76/strong_only route",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/no_escalation accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.7994,
+      "expected": 0.7994,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/no_escalation F1",
+      "status": "PASS",
+      "actual_rounded": 0.7672,
+      "expected": 0.7672,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/no_escalation route",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/anomaly_count accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8425,
+      "expected": 0.8425,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/anomaly_count F1",
+      "status": "PASS",
+      "actual_rounded": 0.8256,
+      "expected": 0.8256,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/anomaly_count route",
+      "status": "PASS",
+      "actual_rounded": 0.4359,
+      "expected": 0.4359,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/learned_router_matched_rate accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8513,
+      "expected": 0.8513,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/learned_router_matched_rate F1",
+      "status": "PASS",
+      "actual_rounded": 0.8388,
+      "expected": 0.8388,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/learned_router_matched_rate route",
+      "status": "PASS",
+      "actual_rounded": 0.5363,
+      "expected": 0.5363,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/structure_aware accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8493,
+      "expected": 0.8493,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/structure_aware F1",
+      "status": "PASS",
+      "actual_rounded": 0.8349,
+      "expected": 0.8349,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/structure_aware route",
+      "status": "PASS",
+      "actual_rounded": 0.5363,
+      "expected": 0.5363,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/strict accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8516,
+      "expected": 0.8516,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/strict F1",
+      "status": "PASS",
+      "actual_rounded": 0.838,
+      "expected": 0.838,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/strict route",
+      "status": "PASS",
+      "actual_rounded": 0.5647,
+      "expected": 0.5647,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/strong_only accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.863,
+      "expected": 0.863,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/strong_only F1",
+      "status": "PASS",
+      "actual_rounded": 0.8528,
+      "expected": 0.8528,
+      "digits": 4
+    },
+    {
+      "claim": "Table 7 HaluEvalQA-3206-afterHuman/strong_only route",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 4
+    },
+    {
+      "claim": "RQ2 ASQA rescued/routed-errors/harmed",
+      "status": "PASS",
+      "actual": [
+        21,
+        24,
+        5
+      ],
+      "expected": [
+        21,
+        24,
+        5
+      ]
+    },
+    {
+      "claim": "RQ2 Halu rescued/routed-errors/harmed",
+      "status": "PASS",
+      "actual": [
+        449,
+        838,
+        132
+      ],
+      "expected": [
+        449,
+        838,
+        132
+      ]
+    },
+    {
+      "claim": "Table 6 ASQA-top5-76 cloud-token change percent",
+      "status": "PASS",
+      "actual": -53.16346103411942,
+      "expected": -53.17,
+      "absolute_tolerance": 0.01
+    },
+    {
+      "claim": "Table 6 ASQA-top5-76 total-token change percent",
+      "status": "PASS",
+      "actual": 39.51821563707756,
+      "expected": 39.52,
+      "absolute_tolerance": 0.01
+    },
+    {
+      "claim": "Table 6 ASQA-top5-76 mean-latency change percent",
+      "status": "PASS",
+      "actual": -12.05793927543455,
+      "expected": -12.06,
+      "absolute_tolerance": 0.01
+    },
+    {
+      "claim": "Table 6 HaluEvalQA-3206-afterHuman cloud-token change percent",
+      "status": "PASS",
+      "actual": -32.646602405743884,
+      "expected": -32.65,
+      "absolute_tolerance": 0.01
+    },
+    {
+      "claim": "Table 6 HaluEvalQA-3206-afterHuman total-token change percent",
+      "status": "PASS",
+      "actual": 43.57940813709309,
+      "expected": 43.58,
+      "absolute_tolerance": 0.01
+    },
+    {
+      "claim": "Table 6 HaluEvalQA-3206-afterHuman mean-latency change percent",
+      "status": "PASS",
+      "actual": -8.672175851526454,
+      "expected": -8.67,
+      "absolute_tolerance": 0.01
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/uncertainty_only accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8816,
+      "expected": 0.8816,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/uncertainty_only F1",
+      "status": "PASS",
+      "actual_rounded": 0.8784,
+      "expected": 0.8784,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/uncertainty_only route",
+      "status": "PASS",
+      "actual_rounded": 0.0449,
+      "expected": 0.0449,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/uncertainty_only rescued",
+      "status": "PASS",
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/uncertainty_only harmed",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/uncertainty_only error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.8571,
+      "expected": 0.8571,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/paradox_only accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9408,
+      "expected": 0.9408,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/paradox_only F1",
+      "status": "PASS",
+      "actual_rounded": 0.9412,
+      "expected": 0.9412,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/paradox_only route",
+      "status": "PASS",
+      "actual_rounded": 0.3546,
+      "expected": 0.3546,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/paradox_only rescued",
+      "status": "PASS",
+      "actual": 19,
+      "expected": 19
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/paradox_only harmed",
+      "status": "PASS",
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/paradox_only error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.8636,
+      "expected": 0.8636,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/anomaly_count accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/anomaly_count F1",
+      "status": "PASS",
+      "actual_rounded": 0.9481,
+      "expected": 0.9481,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/anomaly_count route",
+      "status": "PASS",
+      "actual_rounded": 0.2222,
+      "expected": 0.2222,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/anomaly_count rescued",
+      "status": "PASS",
+      "actual": 19,
+      "expected": 19
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/anomaly_count harmed",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/anomaly_count error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.8261,
+      "expected": 0.8261,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware F1",
+      "status": "PASS",
+      "actual_rounded": 0.9487,
+      "expected": 0.9487,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware route",
+      "status": "PASS",
+      "actual_rounded": 0.3945,
+      "expected": 0.3945,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware rescued",
+      "status": "PASS",
+      "actual": 21,
+      "expected": 21
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware harmed",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.875,
+      "expected": 0.875,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/strict accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/strict F1",
+      "status": "PASS",
+      "actual_rounded": 0.9487,
+      "expected": 0.9487,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/strict route",
+      "status": "PASS",
+      "actual_rounded": 0.4345,
+      "expected": 0.4345,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/strict rescued",
+      "status": "PASS",
+      "actual": 21,
+      "expected": 21
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/strict harmed",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/strict error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.875,
+      "expected": 0.875,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_uncertainty accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9342,
+      "expected": 0.9342,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_uncertainty F1",
+      "status": "PASS",
+      "actual_rounded": 0.9351,
+      "expected": 0.9351,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_uncertainty route",
+      "status": "PASS",
+      "actual_rounded": 0.3645,
+      "expected": 0.3645,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_uncertainty rescued",
+      "status": "PASS",
+      "actual": 19,
+      "expected": 19
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_uncertainty harmed",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_uncertainty error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.8636,
+      "expected": 0.8636,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_paradox accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9408,
+      "expected": 0.9408,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_paradox F1",
+      "status": "PASS",
+      "actual_rounded": 0.9419,
+      "expected": 0.9419,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_paradox route",
+      "status": "PASS",
+      "actual_rounded": 0.2185,
+      "expected": 0.2185,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_paradox rescued",
+      "status": "PASS",
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_paradox harmed",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_paradox error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.7826,
+      "expected": 0.7826,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_two_antonym accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_two_antonym F1",
+      "status": "PASS",
+      "actual_rounded": 0.9487,
+      "expected": 0.9487,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_two_antonym route",
+      "status": "PASS",
+      "actual_rounded": 0.3933,
+      "expected": 0.3933,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_two_antonym rescued",
+      "status": "PASS",
+      "actual": 21,
+      "expected": 21
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_two_antonym harmed",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_two_antonym error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.875,
+      "expected": 0.875,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_cross_side accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9539,
+      "expected": 0.9539,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_cross_side F1",
+      "status": "PASS",
+      "actual_rounded": 0.9548,
+      "expected": 0.9548,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_cross_side route",
+      "status": "PASS",
+      "actual_rounded": 0.387,
+      "expected": 0.387,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_cross_side rescued",
+      "status": "PASS",
+      "actual": 21,
+      "expected": 21
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_cross_side harmed",
+      "status": "PASS",
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/structure_aware_no_cross_side error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.875,
+      "expected": 0.875,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/full_escalation accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/full_escalation F1",
+      "status": "PASS",
+      "actual_rounded": 0.9494,
+      "expected": 0.9494,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/full_escalation route",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/full_escalation rescued",
+      "status": "PASS",
+      "actual": 22,
+      "expected": 22
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/full_escalation harmed",
+      "status": "PASS",
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "claim": "Table S1 ASQA-top5-76/full_escalation error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.9167,
+      "expected": 0.9167,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/uncertainty_only accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8199,
+      "expected": 0.8199,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/uncertainty_only F1",
+      "status": "PASS",
+      "actual_rounded": 0.7955,
+      "expected": 0.7955,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/uncertainty_only route",
+      "status": "PASS",
+      "actual_rounded": 0.1727,
+      "expected": 0.1727,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/uncertainty_only rescued",
+      "status": "PASS",
+      "actual": 153,
+      "expected": 153
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/uncertainty_only harmed",
+      "status": "PASS",
+      "actual": 23,
+      "expected": 23
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/uncertainty_only error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.5564,
+      "expected": 0.5564,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/paradox_only accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8359,
+      "expected": 0.8359,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/paradox_only F1",
+      "status": "PASS",
+      "actual_rounded": 0.8174,
+      "expected": 0.8174,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/paradox_only route",
+      "status": "PASS",
+      "actual_rounded": 0.4007,
+      "expected": 0.4007,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/paradox_only rescued",
+      "status": "PASS",
+      "actual": 349,
+      "expected": 349
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/paradox_only harmed",
+      "status": "PASS",
+      "actual": 117,
+      "expected": 117
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/paradox_only error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.4986,
+      "expected": 0.4986,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/anomaly_count accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8425,
+      "expected": 0.8425,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/anomaly_count F1",
+      "status": "PASS",
+      "actual_rounded": 0.8256,
+      "expected": 0.8256,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/anomaly_count route",
+      "status": "PASS",
+      "actual_rounded": 0.4359,
+      "expected": 0.4359,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/anomaly_count rescued",
+      "status": "PASS",
+      "actual": 384,
+      "expected": 384
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/anomaly_count harmed",
+      "status": "PASS",
+      "actual": 110,
+      "expected": 110
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/anomaly_count error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.5981,
+      "expected": 0.5981,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8493,
+      "expected": 0.8493,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware F1",
+      "status": "PASS",
+      "actual_rounded": 0.8349,
+      "expected": 0.8349,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware route",
+      "status": "PASS",
+      "actual_rounded": 0.5363,
+      "expected": 0.5363,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware rescued",
+      "status": "PASS",
+      "actual": 449,
+      "expected": 449
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware harmed",
+      "status": "PASS",
+      "actual": 132,
+      "expected": 132
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.5358,
+      "expected": 0.5358,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/strict accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8516,
+      "expected": 0.8516,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/strict F1",
+      "status": "PASS",
+      "actual_rounded": 0.838,
+      "expected": 0.838,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/strict route",
+      "status": "PASS",
+      "actual_rounded": 0.5647,
+      "expected": 0.5647,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/strict rescued",
+      "status": "PASS",
+      "actual": 466,
+      "expected": 466
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/strict harmed",
+      "status": "PASS",
+      "actual": 134,
+      "expected": 134
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/strict error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.526,
+      "expected": 0.526,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_uncertainty accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8361,
+      "expected": 0.8361,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_uncertainty F1",
+      "status": "PASS",
+      "actual_rounded": 0.8176,
+      "expected": 0.8176,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_uncertainty route",
+      "status": "PASS",
+      "actual_rounded": 0.4118,
+      "expected": 0.4118,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_uncertainty rescued",
+      "status": "PASS",
+      "actual": 352,
+      "expected": 352
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_uncertainty harmed",
+      "status": "PASS",
+      "actual": 119,
+      "expected": 119
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_uncertainty error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.4979,
+      "expected": 0.4979,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_paradox accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.84,
+      "expected": 0.84,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_paradox F1",
+      "status": "PASS",
+      "actual_rounded": 0.8221,
+      "expected": 0.8221,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_paradox route",
+      "status": "PASS",
+      "actual_rounded": 0.4241,
+      "expected": 0.4241,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_paradox rescued",
+      "status": "PASS",
+      "actual": 361,
+      "expected": 361
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_paradox harmed",
+      "status": "PASS",
+      "actual": 103,
+      "expected": 103
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_paradox error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.5928,
+      "expected": 0.5928,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_two_antonym accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8491,
+      "expected": 0.8491,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_two_antonym F1",
+      "status": "PASS",
+      "actual_rounded": 0.8347,
+      "expected": 0.8347,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_two_antonym route",
+      "status": "PASS",
+      "actual_rounded": 0.5335,
+      "expected": 0.5335,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_two_antonym rescued",
+      "status": "PASS",
+      "actual": 448,
+      "expected": 448
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_two_antonym harmed",
+      "status": "PASS",
+      "actual": 132,
+      "expected": 132
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_two_antonym error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.5352,
+      "expected": 0.5352,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_cross_side accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8488,
+      "expected": 0.8488,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_cross_side F1",
+      "status": "PASS",
+      "actual_rounded": 0.8343,
+      "expected": 0.8343,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_cross_side route",
+      "status": "PASS",
+      "actual_rounded": 0.5341,
+      "expected": 0.5341,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_cross_side rescued",
+      "status": "PASS",
+      "actual": 446,
+      "expected": 446
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_cross_side harmed",
+      "status": "PASS",
+      "actual": 132,
+      "expected": 132
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/structure_aware_no_cross_side error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.5348,
+      "expected": 0.5348,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/full_escalation accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.863,
+      "expected": 0.863,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/full_escalation F1",
+      "status": "PASS",
+      "actual_rounded": 0.8528,
+      "expected": 0.8528,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/full_escalation route",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 4
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/full_escalation rescued",
+      "status": "PASS",
+      "actual": 551,
+      "expected": 551
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/full_escalation harmed",
+      "status": "PASS",
+      "actual": 147,
+      "expected": 147
+    },
+    {
+      "claim": "Table S1 HaluEvalQA-3206-afterHuman/full_escalation error-conditional rescue",
+      "status": "PASS",
+      "actual_rounded": 0.4322,
+      "expected": 0.4322,
+      "digits": 4
+    },
+    {
+      "claim": "Supplement S1 ASQA-top5-76 oracle F1",
+      "status": "PASS",
+      "actual_rounded": 0.987,
+      "expected": 0.987,
+      "digits": 4
+    },
+    {
+      "claim": "Supplement S1 ASQA-top5-76 oracle route percent",
+      "status": "PASS",
+      "actual": 2.9962546816479403,
+      "expected": 2.996,
+      "absolute_tolerance": 0.0005
+    },
+    {
+      "claim": "Supplement S1 HaluEvalQA-3206-afterHuman oracle F1",
+      "status": "PASS",
+      "actual_rounded": 0.8782,
+      "expected": 0.8782,
+      "digits": 4
+    },
+    {
+      "claim": "Supplement S1 HaluEvalQA-3206-afterHuman oracle route percent",
+      "status": "PASS",
+      "actual": 6.765861875350926,
+      "expected": 6.766,
+      "absolute_tolerance": 0.0005
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/DeepSeek-V4-Flash cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 29726.7,
+      "expected": 29726.7,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/DeepSeek-V4-Flash local_tokens",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/DeepSeek-V4-Flash cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 37.92,
+      "expected": 37.92,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/DeepSeek-V4-Flash local_calls",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/DeepSeek-V4-Flash cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 33.07,
+      "expected": 33.07,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/DeepSeek-V4-Flash local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-12B cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 3581.0,
+      "expected": 3581.0,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-12B local_tokens",
+      "status": "PASS",
+      "actual_rounded": 27363.4,
+      "expected": 27363.4,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-12B cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 11.57,
+      "expected": 11.57,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-12B local_calls",
+      "status": "PASS",
+      "actual_rounded": 26.35,
+      "expected": 26.35,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-12B cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 10.65,
+      "expected": 10.65,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-12B local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 18.85,
+      "expected": 18.85,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-4B cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 3581.0,
+      "expected": 3581.0,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-4B local_tokens",
+      "status": "PASS",
+      "actual_rounded": 27551.2,
+      "expected": 27551.2,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-4B cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 11.57,
+      "expected": 11.57,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-4B local_calls",
+      "status": "PASS",
+      "actual_rounded": 26.35,
+      "expected": 26.35,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-4B cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 10.65,
+      "expected": 10.65,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Gemma3-4B local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 9.62,
+      "expected": 9.62,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Phi4-14B cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 3581.0,
+      "expected": 3581.0,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Phi4-14B local_tokens",
+      "status": "PASS",
+      "actual_rounded": 26656.5,
+      "expected": 26656.5,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Phi4-14B cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 11.57,
+      "expected": 11.57,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Phi4-14B local_calls",
+      "status": "PASS",
+      "actual_rounded": 26.35,
+      "expected": 26.35,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Phi4-14B cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 10.65,
+      "expected": 10.65,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 ASQA-top5-76/Phi4-14B local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 14.46,
+      "expected": 14.46,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 4695.8,
+      "expected": 4695.8,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash local_tokens",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 12.79,
+      "expected": 12.79,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash local_calls",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 10.96,
+      "expected": 10.96,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/DeepSeek-V4-Flash local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-12B cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 1371.2,
+      "expected": 1371.2,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-12B local_tokens",
+      "status": "PASS",
+      "actual_rounded": 3563.7,
+      "expected": 3563.7,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-12B cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 4.38,
+      "expected": 4.38,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-12B local_calls",
+      "status": "PASS",
+      "actual_rounded": 8.41,
+      "expected": 8.41,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-12B cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 4.26,
+      "expected": 4.26,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-12B local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 4.43,
+      "expected": 4.43,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-4B cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 1371.2,
+      "expected": 1371.2,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-4B local_tokens",
+      "status": "PASS",
+      "actual_rounded": 3579.4,
+      "expected": 3579.4,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-4B cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 4.38,
+      "expected": 4.38,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-4B local_calls",
+      "status": "PASS",
+      "actual_rounded": 8.41,
+      "expected": 8.41,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-4B cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 4.26,
+      "expected": 4.26,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Gemma3-4B local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 2.14,
+      "expected": 2.14,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Phi4-14B cloud_tokens",
+      "status": "PASS",
+      "actual_rounded": 1371.2,
+      "expected": 1371.2,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Phi4-14B local_tokens",
+      "status": "PASS",
+      "actual_rounded": 3453.6,
+      "expected": 3453.6,
+      "digits": 1
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Phi4-14B cloud_calls",
+      "status": "PASS",
+      "actual_rounded": 4.38,
+      "expected": 4.38,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Phi4-14B local_calls",
+      "status": "PASS",
+      "actual_rounded": 8.41,
+      "expected": 8.41,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Phi4-14B cloud_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 4.26,
+      "expected": 4.26,
+      "digits": 2
+    },
+    {
+      "claim": "Table S2 HaluEvalQA-3206-afterHuman/Phi4-14B local_wall_latency_seconds",
+      "status": "PASS",
+      "actual_rounded": 4.16,
+      "expected": 4.16,
+      "digits": 2
+    },
+    {
+      "claim": "Supplement S2 ASQA-top5-76 Gemma3-4B GPU duration",
+      "status": "PASS",
+      "actual_rounded": 9.32,
+      "expected": 9.32,
+      "digits": 2
+    },
+    {
+      "claim": "Supplement S2 ASQA-top5-76 Gemma3-4B load duration",
+      "status": "PASS",
+      "actual_rounded": 0.052,
+      "expected": 0.052,
+      "digits": 3
+    },
+    {
+      "claim": "Supplement S2 HaluEvalQA-3206-afterHuman Gemma3-4B GPU duration",
+      "status": "PASS",
+      "actual_rounded": 1.99,
+      "expected": 1.99,
+      "digits": 2
+    },
+    {
+      "claim": "Supplement S2 HaluEvalQA-3206-afterHuman Gemma3-4B load duration",
+      "status": "PASS",
+      "actual_rounded": 0.016,
+      "expected": 0.016,
+      "digits": 3
+    },
+    {
+      "claim": "Table 8 main700/ALL stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8214,
+      "expected": 0.8214,
+      "digits": 4
+    },
+    {
+      "claim": "Table 8 main700/ALL final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9386,
+      "expected": 0.9386,
+      "digits": 4
+    },
+    {
+      "claim": "Table 8 main700/ALL route",
+      "status": "PASS",
+      "actual_rounded": 0.5643,
+      "expected": 0.5643,
+      "digits": 4
+    },
+    {
+      "claim": "Table 8 main700/ALL efficiency",
+      "status": "PASS",
+      "actual_rounded": 20.76,
+      "expected": 20.76,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Entity / Alias / Lexical Relation stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.81,
+      "expected": 0.81,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Entity / Alias / Lexical Relation final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9,
+      "expected": 0.9,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Entity / Alias / Lexical Relation route",
+      "status": "PASS",
+      "actual_rounded": 0.49,
+      "expected": 0.49,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Entity / Alias / Lexical Relation efficiency",
+      "status": "PASS",
+      "actual_rounded": 18.37,
+      "expected": 18.37,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Negation / Exception stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.86,
+      "expected": 0.86,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Negation / Exception final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.93,
+      "expected": 0.93,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Negation / Exception route",
+      "status": "PASS",
+      "actual_rounded": 0.58,
+      "expected": 0.58,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Negation / Exception efficiency",
+      "status": "PASS",
+      "actual_rounded": 12.07,
+      "expected": 12.07,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Quantifier / Boundary stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.84,
+      "expected": 0.84,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Quantifier / Boundary final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.95,
+      "expected": 0.95,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Quantifier / Boundary route",
+      "status": "PASS",
+      "actual_rounded": 0.52,
+      "expected": 0.52,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Quantifier / Boundary efficiency",
+      "status": "PASS",
+      "actual_rounded": 21.15,
+      "expected": 21.15,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Time / Sequence stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.82,
+      "expected": 0.82,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Time / Sequence final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.95,
+      "expected": 0.95,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Time / Sequence route",
+      "status": "PASS",
+      "actual_rounded": 0.61,
+      "expected": 0.61,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Time / Sequence efficiency",
+      "status": "PASS",
+      "actual_rounded": 21.31,
+      "expected": 21.31,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Comparative / Superlative stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.79,
+      "expected": 0.79,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Comparative / Superlative final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.94,
+      "expected": 0.94,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Comparative / Superlative route",
+      "status": "PASS",
+      "actual_rounded": 0.66,
+      "expected": 0.66,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Comparative / Superlative efficiency",
+      "status": "PASS",
+      "actual_rounded": 22.73,
+      "expected": 22.73,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Numerical / Computation stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.82,
+      "expected": 0.82,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Numerical / Computation final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.97,
+      "expected": 0.97,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Numerical / Computation route",
+      "status": "PASS",
+      "actual_rounded": 0.62,
+      "expected": 0.62,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Numerical / Computation efficiency",
+      "status": "PASS",
+      "actual_rounded": 24.19,
+      "expected": 24.19,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Multi-entity / Multi-hop stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.81,
+      "expected": 0.81,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Multi-entity / Multi-hop final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.93,
+      "expected": 0.93,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Multi-entity / Multi-hop route",
+      "status": "PASS",
+      "actual_rounded": 0.47,
+      "expected": 0.47,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 main700/Multi-entity / Multi-hop efficiency",
+      "status": "PASS",
+      "actual_rounded": 25.53,
+      "expected": 25.53,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/ALL stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.7643,
+      "expected": 0.7643,
+      "digits": 4
+    },
+    {
+      "claim": "Table 8 replication140/ALL final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.95,
+      "expected": 0.95,
+      "digits": 4
+    },
+    {
+      "claim": "Table 8 replication140/ALL route",
+      "status": "PASS",
+      "actual_rounded": 0.6429,
+      "expected": 0.6429,
+      "digits": 4
+    },
+    {
+      "claim": "Table 8 replication140/ALL efficiency",
+      "status": "PASS",
+      "actual_rounded": 28.89,
+      "expected": 28.89,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Entity / Alias / Lexical Relation stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.85,
+      "expected": 0.85,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Entity / Alias / Lexical Relation final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9,
+      "expected": 0.9,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Entity / Alias / Lexical Relation route",
+      "status": "PASS",
+      "actual_rounded": 0.5,
+      "expected": 0.5,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Entity / Alias / Lexical Relation efficiency",
+      "status": "PASS",
+      "actual_rounded": 10.0,
+      "expected": 10.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Negation / Exception stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.75,
+      "expected": 0.75,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Negation / Exception final accuracy",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Negation / Exception route",
+      "status": "PASS",
+      "actual_rounded": 0.65,
+      "expected": 0.65,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Negation / Exception efficiency",
+      "status": "PASS",
+      "actual_rounded": 38.46,
+      "expected": 38.46,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Quantifier / Boundary stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.8,
+      "expected": 0.8,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Quantifier / Boundary final accuracy",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Quantifier / Boundary route",
+      "status": "PASS",
+      "actual_rounded": 0.75,
+      "expected": 0.75,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Quantifier / Boundary efficiency",
+      "status": "PASS",
+      "actual_rounded": 26.67,
+      "expected": 26.67,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Time / Sequence stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.7,
+      "expected": 0.7,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Time / Sequence final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.85,
+      "expected": 0.85,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Time / Sequence route",
+      "status": "PASS",
+      "actual_rounded": 0.55,
+      "expected": 0.55,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Time / Sequence efficiency",
+      "status": "PASS",
+      "actual_rounded": 27.27,
+      "expected": 27.27,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Comparative / Superlative stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.85,
+      "expected": 0.85,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Comparative / Superlative final accuracy",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Comparative / Superlative route",
+      "status": "PASS",
+      "actual_rounded": 0.8,
+      "expected": 0.8,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Comparative / Superlative efficiency",
+      "status": "PASS",
+      "actual_rounded": 18.75,
+      "expected": 18.75,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Numerical / Computation stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.7,
+      "expected": 0.7,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Numerical / Computation final accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.9,
+      "expected": 0.9,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Numerical / Computation route",
+      "status": "PASS",
+      "actual_rounded": 0.55,
+      "expected": 0.55,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Numerical / Computation efficiency",
+      "status": "PASS",
+      "actual_rounded": 36.36,
+      "expected": 36.36,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Multi-entity / Multi-hop stage1 accuracy",
+      "status": "PASS",
+      "actual_rounded": 0.7,
+      "expected": 0.7,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Multi-entity / Multi-hop final accuracy",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Multi-entity / Multi-hop route",
+      "status": "PASS",
+      "actual_rounded": 0.7,
+      "expected": 0.7,
+      "digits": 2
+    },
+    {
+      "claim": "Table 8 replication140/Multi-entity / Multi-hop efficiency",
+      "status": "PASS",
+      "actual_rounded": 42.86,
+      "expected": 42.86,
+      "digits": 2
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 repeat F1 mean",
+      "status": "PASS",
+      "actual_rounded": 0.9514,
+      "expected": 0.9514,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 repeat F1 SD",
+      "status": "PASS",
+      "actual_rounded": 0.0035,
+      "expected": 0.0035,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 repeat F1 min",
+      "status": "PASS",
+      "actual_rounded": 0.9494,
+      "expected": 0.9494,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 repeat F1 max",
+      "status": "PASS",
+      "actual_rounded": 0.9554,
+      "expected": 0.9554,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 stable predictions",
+      "status": "PASS",
+      "actual": [
+        151,
+        152
+      ],
+      "expected": [
+        151,
+        152
+      ]
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman repeat F1 mean",
+      "status": "PASS",
+      "actual_rounded": 0.8358,
+      "expected": 0.8358,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman repeat F1 SD",
+      "status": "PASS",
+      "actual_rounded": 0.0018,
+      "expected": 0.0018,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman repeat F1 min",
+      "status": "PASS",
+      "actual_rounded": 0.8338,
+      "expected": 0.8338,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman repeat F1 max",
+      "status": "PASS",
+      "actual_rounded": 0.8368,
+      "expected": 0.8368,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman stable predictions",
+      "status": "PASS",
+      "actual": [
+        399,
+        400
+      ],
+      "expected": [
+        399,
+        400
+      ]
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 local-majority agreement",
+      "status": "PASS",
+      "actual_rounded": 0.9474,
+      "expected": 0.9474,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 local-majority kappa",
+      "status": "PASS",
+      "actual_rounded": 0.8945,
+      "expected": 0.8945,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 shared accuracy advantage",
+      "status": "PASS",
+      "actual_rounded": 0.0,
+      "expected": 0.0,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 ASQA-top5-76 McNemar p",
+      "status": "PASS",
+      "actual_rounded": 1.0,
+      "expected": 1.0,
+      "digits": 11
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman local-majority agreement",
+      "status": "PASS",
+      "actual_rounded": 0.9504,
+      "expected": 0.9504,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman local-majority kappa",
+      "status": "PASS",
+      "actual_rounded": 0.8981,
+      "expected": 0.8981,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman shared accuracy advantage",
+      "status": "PASS",
+      "actual_rounded": 0.0162,
+      "expected": 0.0162,
+      "digits": 4
+    },
+    {
+      "claim": "Table 9 HaluEvalQA-3206-afterHuman McNemar p",
+      "status": "PASS",
+      "actual_rounded": 6.72e-09,
+      "expected": 6.72e-09,
+      "digits": 11
+    },
+    {
+      "claim": "Main-700 category agreement count",
+      "status": "PASS",
+      "actual": 672,
+      "expected": 672
+    },
+    {
+      "claim": "Main-700 support agreement count",
+      "status": "PASS",
+      "actual": 678,
+      "expected": 678
+    },
+    {
+      "claim": "Replication-140 category agreement count",
+      "status": "PASS",
+      "actual": 132,
+      "expected": 132
+    },
+    {
+      "claim": "Replication-140 support agreement count",
+      "status": "PASS",
+      "actual": 140,
+      "expected": 140
+    }
+  ],
+  "external_file_warning": null,
+  "scope": "Stable non-price experimental numbers and identifiers; PDF hashes identify the files reviewed on this date but do not freeze later manuscript wording or layout. Price claims, bibliography, and prose-only claims are outside this machine audit."
+}

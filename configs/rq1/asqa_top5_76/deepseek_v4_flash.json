@@ -1,0 +1,27 @@
+{
+  "prepared_path": "artifacts/prepared/asqa_top5_76.probes.jsonl",
+  "output_root": "artifacts/runs/rq1/asqa_top5_76/deepseek_v4_flash",
+  "run_id": "primary",
+  "resume": true,
+  "routing_policy": "no_escalation",
+  "threshold": 0.5,
+  "scoring_profile": "paper_five_statement_mean",
+  "response_aggregation": "max_factoid_score",
+  "stage1": {
+    "backend": "openai_compatible",
+    "model_id": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 128,
+    "seed": null,
+    "thinking_mode": "disabled",
+    "timeout_seconds": 120,
+    "max_retries": 4,
+    "cache_path": "artifacts/cache/asqa_top5_76/deepseek_v4_flash.jsonl"
+  },
+  "stage2": null,
+  "environment": {"concurrency": 1, "execution": "sequential"},
+  "pricing": {}
+}

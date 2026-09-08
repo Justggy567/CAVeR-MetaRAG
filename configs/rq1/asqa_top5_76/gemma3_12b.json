@@ -1,0 +1,27 @@
+{
+  "prepared_path": "artifacts/prepared/asqa_top5_76.probes.jsonl",
+  "output_root": "artifacts/runs/rq1/asqa_top5_76/gemma3_12b",
+  "run_id": "primary",
+  "resume": true,
+  "routing_policy": "no_escalation",
+  "threshold": 0.5,
+  "scoring_profile": "paper_five_statement_mean",
+  "response_aggregation": "max_factoid_score",
+  "stage1": {
+    "backend": "ollama",
+    "model_id": "gemma3:12b",
+    "endpoint": "http://localhost:11434/api/chat",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "seed": 42,
+    "num_ctx": 8192,
+    "num_predict": 100,
+    "keep_alive": "5m",
+    "timeout_seconds": 120,
+    "cache_path": "artifacts/cache/asqa_top5_76/gemma3_12b.jsonl"
+  },
+  "stage2": null,
+  "environment": {"concurrency": 1, "execution": "sequential"},
+  "pricing": {}
+}

@@ -1,0 +1,24 @@
+Each factoid is assigned one primary category according to the principal reasoning operation required to verify its truth against the provided context, rather than according to surface lexical cues.
+
+1. Entity / Alias / Lexical Relation
+A factoid belongs to this category when its verification primarily requires identifying an entity, alias, category, membership, attribute, or direct lexical/semantic relation. Pure synonym-based surface variation does not constitute a factual difference.
+
+2. Negation / Exception
+A factoid belongs to this category when its truth primarily depends on proposition polarity, exclusion, exception, permission/prohibition, existence/non-existence, or another explicitly negative or exception-based semantic relation.
+
+3. Quantifier / Boundary
+A factoid belongs to this category when its verification primarily depends on scope, lower or upper bounds, degree of coverage, frequency, or quantification/boundary relations such as all, some, only, at least, and at most.
+
+4. Time / Sequence
+A factoid belongs to this category when its verification primarily depends on dates, years, durations, temporal positions, event order, or temporal relations such as before and after.
+
+5. Comparative / Superlative
+A factoid belongs to this category when its verification primarily requires establishing a comparative relation, ranking, relative magnitude, or superlative relation such as highest/lowest or largest/smallest.
+
+6. Numerical / Computation
+A factoid belongs to this category only when a numerical value, quantity, measurement, proportion, unit, or computation result is itself the principal factual element to be verified, or when verification requires an explicit numerical operation such as counting, arithmetic, ratio calculation, or unit conversion.
+
+The mere presence of a number is insufficient for this category. Temporal numbers should preferentially be categorized as Time / Sequence, boundary-related quantities as Quantifier / Boundary, and numbers whose truth depends on comparison as Comparative / Superlative.
+
+7. Multi-entity / Multi-hop
+A factoid belongs to this category when its verification requires combining relations among multiple entities, integrating two or more distinct contextual facts, or following a multi-step relational chain. The mere presence of two or more entity names is not sufficient for this category. The mere presence of two or more entity names is not sufficient for this category; verification must require combining two or more evidence relations or contextual facts.

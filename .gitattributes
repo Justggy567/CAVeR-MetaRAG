@@ -1,0 +1,7 @@
+* -text
+"artifacts/prepared/haluevalqa_3206.probes.jsonl.calls.jsonl" filter=lfs diff=lfs merge=lfs -text
+"artifacts/runs/rq1/haluevalqa_3206/deepseek_v4_flash/primary/calls.jsonl" filter=lfs diff=lfs merge=lfs -text
+"artifacts/runs/rq1/haluevalqa_3206/gemma3_12b/primary/calls.jsonl" filter=lfs diff=lfs merge=lfs -text
+"artifacts/runs/rq1/haluevalqa_3206/gemma3_4b/primary/calls.jsonl" filter=lfs diff=lfs merge=lfs -text
+"artifacts/runs/rq1/haluevalqa_3206/phi4_14b/primary/calls.jsonl" filter=lfs diff=lfs merge=lfs -text
+"artifacts/runs/rq2/haluevalqa_3206/matrix/primary/calls.jsonl" filter=lfs diff=lfs merge=lfs -text
