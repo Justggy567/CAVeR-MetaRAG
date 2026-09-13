@@ -1,8 +1,6 @@
 # Canonical method specification
 
-Status: paper-aligned implementation baseline for revision. The manuscript is
-the primary method authority. Any later change must update this file, Algorithm
-1, Figure 1, tests, and the method-to-code map together.
+Status: The manuscript is the primary method authority. 
 
 ## Unit and probes
 
@@ -63,15 +61,6 @@ The strong verifier re-verifies the identical original, synonyms, and antonyms.
 Probes are not regenerated. The Stage-2 bundle replaces the Stage-1 bundle only
 for routed factoids.
 
-## Decision rule currently made executable
+## Decision rule aligned with the manuscript
 
-The submitted manuscript names a fixed phi and MetaRAG aggregation rule but
-does not give their complete numeric definitions. The canonical executable
-baseline uses positive-side penalties YES=0, NOT_SURE=0.5, NO=1 and
-antonym-side penalties NO=0, NOT_SURE=0.5, YES=1. The five penalties are
-averaged per factoid; response score is the maximum factoid score; threshold is
-0.5.
-
-This paragraph is an explicit implementation assumption that must be confirmed
-against the intended MetaRAG rule before paid reruns. If changed, it must be
-changed once in scoring.py and all experiments rerun.
+The implementation follows Section 3.2 of the manuscript. Positive-side penalties are YES=0, NOT_SURE=0.5, and NO=1; antonym-side penalties are NO=0, NOT_SURE=0.5, and YES=1. The factoid score is the mean of the five penalties. The response score is the maximum score over successfully prepared factoids, and a response is classified as hallucinated when its score is at least 0.5. Responses with no successfully prepared factoids are excluded from effectiveness evaluation and retained in the exclusion audit.

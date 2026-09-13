@@ -3,8 +3,8 @@
   "repository_root": ".",
   "hash_algorithm": "SHA-256",
   "self_excluded": "FILE_MANIFEST_SHA256.json",
-  "file_count": 335,
-  "total_bytes": 913931690,
+  "file_count": 336,
+  "total_bytes": 913962830,
   "files": [
     {
       "path": ".gitattributes",
@@ -1033,8 +1033,8 @@
     },
     {
       "path": "docs/method_spec.md",
-      "sha256": "1f1d3cd72725e29c224fd3f54bf76a589497e042b2d81fa21f73c97cfb1edd56",
-      "bytes": 3525
+      "sha256": "1cdf265bfe7dd6033c4d18467ec79c754548f497e8eeeaab8693c6e2007dda6e",
+      "bytes": 3292
     },
     {
       "path": "docs/method_to_code.md",
@@ -1203,8 +1203,8 @@
     },
     {
       "path": "release/RQ1&2_data_cleaning/simple_cleaning/config.py",
-      "sha256": "a8b305c43117317e9e58722125ba08e7a1647d3a27314d04042576924294f6c7",
-      "bytes": 2795
+      "sha256": "caaa44963b96663a2e7d0e5c13ff729304305ee6b7936432ea57cd8755815e26",
+      "bytes": 2689
     },
     {
       "path": "release/RQ1&2_data_cleaning/simple_cleaning/data_io.py",
@@ -1555,6 +1555,11 @@
       "path": "src/caver/publication.py",
       "sha256": "edee19098d9d9f6b3c68d209a0b037f333af1c73f70167ed9230232ebc0e6f44",
       "bytes": 17052
+    },
+    {
+      "path": "src/caver/reviewer_analysis.py",
+      "sha256": "f9b0f8459b325fd969ba1fe4d569ac0adb82f8ca83c724b37b6a679e1745c03c",
+      "bytes": 31479
     },
     {
       "path": "src/caver/routing.py",

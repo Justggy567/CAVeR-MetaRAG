@@ -1,5 +1,4 @@
-PyCharm run configuration area.
-Usually, you only need to modify DATASETS_TO_RUN, TEST_LIMIT, and RUN_TAG.
+
 
 from __future__ import annotations
 
